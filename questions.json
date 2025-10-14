@@ -101,12 +101,84 @@
         }
     },
 
+    {
+      "id": "I1",
+      "text": "What choice from A to D is more related to the image?",
+      "media": [
+        { "type": "audio", "src": "https://example.com/audio6.mp3" },
+        { "type": "image", "src": "https://i.imgur.com/i5lVdsd.jpeg" }
+      ],
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      }
+    },
+    {
+      "id": "I2",
+      "text": "What choice from A to D is more related to the image?",
+      "media": [
+        { "type": "audio", "src": "https://example.com/audio6.mp3" },
+        { "type": "image", "src": "https://i.imgur.com/i5lVdsd.jpeg" }
+      ],
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      }
+    },
+    {
+      "id": "I3",
+      "text": "What choice from A to D is more related to the image?",
+      "media": [
+        { "type": "audio", "src": "https://example.com/audio6.mp3" },
+        { "type": "image", "src": "https://i.imgur.com/i5lVdsd.jpeg" }
+      ],
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      }
+    },
+    {
+      "id": "I4",
+      "text": "What choice from A to D is more related to the image?",
+      "media": [
+        { "type": "audio", "src": "https://example.com/audio6.mp3" },
+        { "type": "image", "src": "https://i.imgur.com/i5lVdsd.jpeg" }
+      ],
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      }
+    },
+    {
+      "id": "I5",
+      "text": "What choice from A to D is more related to the image?",
+      "media": [
+        { "type": "audio", "src": "https://example.com/audio6.mp3" },
+        { "type": "image", "src": "https://i.imgur.com/i5lVdsd.jpeg" }
+      ],
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      }
+    },
+
     
       {
         "id": 1,
-        "text": "What is the speaker promoting?",
+        "text": "<strong>(Audio 1)</strong>What is the speaker promoting?",
         "media": [
-          { "type": "audio", "src": "https://example.com/audio1.mp3" }
+          { "type": "audio", "src": "tracks/4/main.mp3" },
+          { "type": "audio", "src": "tracks/4/1.mp3" }
         ],
         "options": {
           "A": "International capital",
@@ -117,9 +189,10 @@
       },
       {
         "id": 2,
-        "text": "Where does this talk take place?",
+        "text": "<strong>(Audio 1)</strong>Where does this talk take place?",
         "media": [
-          { "type": "audio", "src": "https://example.com/audio2.mp3" }
+          { "type": "audio", "src": "tracks/4/main.mp3" },
+          { "type": "audio", "src": "tracks/4/2.mp3" }
         ],
         "options": {
           "A": "At a trade conference",
@@ -130,9 +203,10 @@
       },
       {
         "id": 3,
-        "text": "According to the speaker, why are foreign buyers interested in Irish products?",
+        "text": "<strong>(Audio 1)</strong>According to the speaker, why are foreign buyers interested in Irish products?",
         "media": [
-          { "type": "audio", "src": "https://example.com/audio3.mp3" }
+          { "type": "audio", "src": "tracks/4/main.mp3" },
+          { "type": "audio", "src": "tracks/4/3.mp3" }
         ],
         "options": {
           "A": "They are reasonably priced.",
@@ -143,9 +217,10 @@
       },
       {
         "id": 4,
-        "text": "Why is the SmartShares company in the news?",
+        "text": "<strong>(Audio 2)</strong>Why is the SmartShares company in the news?",
         "media": [
-          { "type": "audio", "src": "https://example.com/audio4.mp3" }
+          { "type": "audio", "src": "tracks/4/main 2.mp3" },
+          { "type": "audio", "src": "tracks/4/4.mp3" }
         ],
         "options": {
           "A": "It has laid off a large part of its workforce.",
@@ -156,9 +231,10 @@
       },
       {
         "id": 5,
-        "text": "According to the report, what is improving for workers in Thailand?",
+        "text": "<strong>(Audio 2)</strong>According to the report, what is improving for workers in Thailand?",
         "media": [
-          { "type": "audio", "src": "https://example.com/audio5.mp3" }
+          { "type": "audio", "src": "tracks/4/main 2.mp3" },
+          { "type": "audio", "src": "tracks/4/5.mp3" }
         ],
         "options": {
           "A": "Salaries",
@@ -169,10 +245,10 @@
       },
       {
         "id": 6,
-        "text": "Look at the graphic. What time will the East Asia report begin?",
+        "text": "<strong>(Audio 2)</strong><p>Look at the graphic. What time will the East Asia report begin?</p><table border='1' cellpadding='6' cellspacing='0' style='border-collapse:collapse; text-align:left;'><tr><td></td><td>Presenter</td></tr><tr><td>Airline A</td><td>Mark Francis</td></tr><tr><td>Airline A</td><td></td></tr><tr><td>Airline A</td><td></td></tr><tr><td>Airline A</td><td>Jane Withers</td></tr></table>",
         "media": [
-          { "type": "audio", "src": "https://example.com/audio6.mp3" },
-          { "type": "image", "src": "https://i.imgur.com/i5lVdsd.jpeg" }
+          { "type": "audio", "src": "tracks/4/main 2.mp3" },
+          { "type": "audio", "src": "tracks/4/6.mp3" }
         ],
         "options": {
           "A": "18:00",
@@ -183,9 +259,10 @@
       },
       {
         "id": 7,
-        "text": "What kind of store is Dunthorps?",
+        "text": "<strong>(Audio 3)</strong>What kind of store is Dunthorps?",
         "media": [
-          { "type": "audio", "src": "https://example.com/audio7.mp3" }
+          { "type": "audio", "src": "tracks/4/main 3.mp3" },
+          { "type": "audio", "src": "tracks/4/7.mp3" }
         ],
         "options": {
           "A": "Clothing",
@@ -196,9 +273,10 @@
       },
       {
         "id": 8,
-        "text": "Why does the speaker say, “it’s crazy!”?",
+        "text": "<strong>(Audio 3)</strong>Why does the speaker say, “it’s crazy!”?",
         "media": [
-          { "type": "audio", "src": "https://example.com/audio8.mp3" }
+          { "type": "audio", "src": "tracks/4/main 3.mp3" },
+          { "type": "audio", "src": "tracks/4/8.mp3" }
         ],
         "options": {
           "A": "He thinks the items are too expensive.",
@@ -209,9 +287,10 @@
       },
       {
         "id": 9,
-        "text": "When does the sale end?",
+        "text": "<strong>(Audio 3)</strong>When does the sale end?",
         "media": [
-          { "type": "audio", "src": "https://example.com/audio9.mp3" }
+          { "type": "audio", "src": "tracks/4/main 3.mp3" },
+          { "type": "audio", "src": "tracks/4/9.mp3" }
         ],
         "options": {
           "A": "End of June",
@@ -222,9 +301,10 @@
       },
       {
         "id": 10,
-        "text": "Where did the artist get the idea for his piece?",
+        "text": "<strong>(Audio 4)</strong>Where did the artist get the idea for his piece?",
         "media": [
-          { "type": "audio", "src": "https://example.com/audio10.mp3" }
+          { "type": "audio", "src": "tracks/4/main 4.mp3" },
+          { "type": "audio", "src": "tracks/4/10.mp3" }
         ],
         "options": {
           "A": "France",
@@ -233,21 +313,29 @@
           "D": "New Zealand"
         }
       },
-
-
-      {
-        "id": 4,
-        "text": "Watch the short clip and answer: what color is the car shown?",
-        "media":  [
-        { "type": "video", "src": "https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" }
-      ],
-        "options": { "A": "Red", "B": "Blue", "C": "Green", "D": "Yellow" }
-      },
-      {
-        "id": 5,
-        "text": "Final: pick the correct statement about JSON.",
-        "media": null,
-        "options": { "A": "Stands for JavaScript Only Notation", "B": "Is a binary format", "C": "Human-readable text format", "D": "Cannot represent arrays" }
+      
+    
+  {
+    "id": "Table 1",
+    "text": "<table border='1' cellpadding='6' cellspacing='0' style='border-collapse:collapse; text-align:center; width:100%;'><thead><tr><th></th><th>Year 3</th><th>Year 2</th><th>Year 1</th></tr></thead><tbody><tr><td>Sales</td><td>$679,823</td><td>$379,722</td><td>$489,357</td></tr><tr><td>Net Income</td><td>$14,805</td><td>$19,977</td><td>$35,465</td></tr><tr><td>Earnings per Share</td><td>$0.75</td><td>$1.04</td><td>$1.89</td></tr><tr><td>Shareholders Equity</td><td>$275,242</td><td>$257,515</td><td>$245,006</td></tr><tr><td>Return on Equity (1)</td><td>5.3%</td><td>7.8%</td><td>14.5%</td></tr></tbody></table><p style='font-size:0.9em;'><em>(1) Defined as net income divided by shareholder equity, minus extraordinary items. (Periods listed are years ending Dec. 31.)</em></p><p>How much money did each share make in Year 2?</p>",
+    "options": {
+        "A": "$1.04",
+        "B": "$14.50",
+        "C": "$14,805",
+        "D": "$379,722"
       }
+  },
+  {
+    "id": "table 2",
+    "text": "<table border='1' cellpadding='6' cellspacing='0' style='border-collapse:collapse; text-align:center; width:100%;'><thead><tr><th></th><th>Year 3</th><th>Year 2</th><th>Year 1</th></tr></thead><tbody><tr><td>Sales</td><td>$679,823</td><td>$379,722</td><td>$489,357</td></tr><tr><td>Net Income</td><td>$14,805</td><td>$19,977</td><td>$35,465</td></tr><tr><td>Earnings per Share</td><td>$0.75</td><td>$1.04</td><td>$1.89</td></tr><tr><td>Shareholders Equity</td><td>$275,242</td><td>$257,515</td><td>$245,006</td></tr><tr><td>Return on Equity (1)</td><td>5.3%</td><td>7.8%</td><td>14.5%</td></tr></tbody></table><p style='font-size:0.9em;'><em>(1) Defined as net income divided by shareholder equity, minus extraordinary items. (Periods listed are years ending Dec. 31.)</em></p><p>What must be subtracted to determine Return on Equity?</p>",
+    "options": {
+        "A": "extraordinary items",
+        "B": "net income",
+        "C": "shareholders equity",
+        "D": "earnings per share"
+      }
+  }
+
+
     ]
   }
