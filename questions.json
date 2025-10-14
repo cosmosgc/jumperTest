@@ -100,27 +100,147 @@
         "D": "us"
         }
     },
+
+    
+      {
+        "id": 1,
+        "text": "What is the speaker promoting?",
+        "media": [
+          { "type": "audio", "src": "https://example.com/audio1.mp3" }
+        ],
+        "options": {
+          "A": "International capital",
+          "B": "Increased imports",
+          "C": "Foreign investment",
+          "D": "Increased export"
+        }
+      },
       {
         "id": 2,
-        "text": "Identify the animal in the image.",
-        "media": { "type": "image", "src": "https://upload.wikimedia.org/wikipedia/commons/7/73/Lion_waiting_in_Namibia.jpg", "alt":"lion" },
-        "options": { "A": "Tiger", "B": "Lion", "C": "Leopard", "D": "Cheetah" }
+        "text": "Where does this talk take place?",
+        "media": [
+          { "type": "audio", "src": "https://example.com/audio2.mp3" }
+        ],
+        "options": {
+          "A": "At a trade conference",
+          "B": "At a business school",
+          "C": "At a corporate board meeting",
+          "D": "At a local government meeting"
+        }
       },
       {
         "id": 3,
-        "text": "Listen and choose the correct instrument.",
-        "media":  [
-            { "type": "audio", "src": "https://www2.cs.uic.edu/~i101/SoundFiles/StarWars60.wav" },
-            { "type": "image", "src": "https://i.imgur.com/eGmbn0m.jpeg" }
+        "text": "According to the speaker, why are foreign buyers interested in Irish products?",
+        "media": [
+          { "type": "audio", "src": "https://example.com/audio3.mp3" }
         ],
-        "options": { "A": "Guitar", "B": "Piano", "C": "Violin", "D": "Synth" }
+        "options": {
+          "A": "They are reasonably priced.",
+          "B": "They are high quality.",
+          "C": "They are organic.",
+          "D": "They are easily available."
+        }
       },
+      {
+        "id": 4,
+        "text": "Why is the SmartShares company in the news?",
+        "media": [
+          { "type": "audio", "src": "https://example.com/audio4.mp3" }
+        ],
+        "options": {
+          "A": "It has laid off a large part of its workforce.",
+          "B": "It has been involved in a criminal court case.",
+          "C": "It has expanded into the East Asian market.",
+          "D": "It has won an important industry award."
+        }
+      },
+      {
+        "id": 5,
+        "text": "According to the report, what is improving for workers in Thailand?",
+        "media": [
+          { "type": "audio", "src": "https://example.com/audio5.mp3" }
+        ],
+        "options": {
+          "A": "Salaries",
+          "B": "Benefits packages",
+          "C": "Working conditions",
+          "D": "Productivity"
+        }
+      },
+      {
+        "id": 6,
+        "text": "Look at the graphic. What time will the East Asia report begin?",
+        "media": [
+          { "type": "audio", "src": "https://example.com/audio6.mp3" },
+          { "type": "image", "src": "https://i.imgur.com/i5lVdsd.jpeg" }
+        ],
+        "options": {
+          "A": "18:00",
+          "B": "18:05",
+          "C": "18:10",
+          "D": "18:20"
+        }
+      },
+      {
+        "id": 7,
+        "text": "What kind of store is Dunthorps?",
+        "media": [
+          { "type": "audio", "src": "https://example.com/audio7.mp3" }
+        ],
+        "options": {
+          "A": "Clothing",
+          "B": "Kitchenware",
+          "C": "Department",
+          "D": "Furniture"
+        }
+      },
+      {
+        "id": 8,
+        "text": "Why does the speaker say, “it’s crazy!”?",
+        "media": [
+          { "type": "audio", "src": "https://example.com/audio8.mp3" }
+        ],
+        "options": {
+          "A": "He thinks the items are too expensive.",
+          "B": "He believes that the sale is not a good idea.",
+          "C": "He thinks the clothes are unusual.",
+          "D": "He thinks the reductions are extreme."
+        }
+      },
+      {
+        "id": 9,
+        "text": "When does the sale end?",
+        "media": [
+          { "type": "audio", "src": "https://example.com/audio9.mp3" }
+        ],
+        "options": {
+          "A": "End of June",
+          "B": "July 1st",
+          "C": "End of July",
+          "D": "Mid-August"
+        }
+      },
+      {
+        "id": 10,
+        "text": "Where did the artist get the idea for his piece?",
+        "media": [
+          { "type": "audio", "src": "https://example.com/audio10.mp3" }
+        ],
+        "options": {
+          "A": "France",
+          "B": "The Caribbean",
+          "C": "Austria",
+          "D": "New Zealand"
+        }
+      },
+
+
       {
         "id": 4,
         "text": "Watch the short clip and answer: what color is the car shown?",
         "media":  [
         { "type": "video", "src": "https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" }
-  ],
+      ],
         "options": { "A": "Red", "B": "Blue", "C": "Green", "D": "Yellow" }
       },
       {
