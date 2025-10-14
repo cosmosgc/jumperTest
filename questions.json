@@ -334,7 +334,40 @@
         "C": "shareholders equity",
         "D": "earnings per share"
       }
+  },
+
+  {
+    "id": "149",
+    "text": "<div style='border:1px solid #000; padding:10px;'><h3>Laser Printers</h3><p>[1] Laser printers use xerographic technology similar to that used in photocopiers. They can reproduce an almost limitless variety of type forms and sizes, as well as complex graphics.</p><p>[2] Images are electronically created on a light-sensitive drum, usually with a scanning laser. Powdered toner adheres to areas where light touches the drum and then transfers to a sheet of paper, which is briefly heated to fuse the toner to the paper permanently.</p><p>[3] A typical laser printer can print 20 color pages a minute, compared to 12 for an ink-jet printer; older dot-matrix printers can take 45 seconds to print a single page. When they were first introduced, laser printers typically cost over a thousand dollars. Now prices have dropped to only a few hundred, at most.</p><p>[4] —</p></div><p>Questions 149–151 refer to the following stimulus.</p><p>What is implied as an advantage of laser printers?</p>",
+    "options": {
+      "A": "speed",
+      "B": "ease of use",
+      "C": "low ink costs",
+      "D": "superior printing quality"
+    }
+  },
+  {
+    "id": "150",
+    "text": "<div style='border:1px solid #000; padding:10px;'><h3>Laser Printers</h3><p>[1] Laser printers use xerographic technology similar to that used in photocopiers. They can reproduce an almost limitless variety of type forms and sizes, as well as complex graphics.</p><p>[2] Images are electronically created on a light-sensitive drum, usually with a scanning laser. Powdered toner adheres to areas where light touches the drum and then transfers to a sheet of paper, which is briefly heated to fuse the toner to the paper permanently.</p><p>[3] A typical laser printer can print 20 color pages a minute, compared to 12 for an ink-jet printer; older dot-matrix printers can take 45 seconds to print a single page. When they were first introduced, laser printers typically cost over a thousand dollars. Now prices have dropped to only a few hundred, at most.</p><p>[4] —</p></div><p>Questions 149–151 refer to the following stimulus.</p><p>According to the passage, how much did early laser printers cost?</p>",
+    "options": {
+      "A": "a few hundred dollars",
+      "B": "approximately $500",
+      "C": "$500–$700",
+      "D": "over $1,000"
+    }
+  },
+  {
+    "id": "151",
+    "text": "<div style='border:1px solid #000; padding:10px;'><h3>Laser Printers</h3><p>[1] Laser printers use xerographic technology similar to that used in photocopiers. They can reproduce an almost limitless variety of type forms and sizes, as well as complex graphics.</p><p>[2] Images are electronically created on a light-sensitive drum, usually with a scanning laser. Powdered toner adheres to areas where light touches the drum and then transfers to a sheet of paper, which is briefly heated to fuse the toner to the paper permanently.</p><p>[3] A typical laser printer can print 20 color pages a minute, compared to 12 for an ink-jet printer; older dot-matrix printers can take 45 seconds to print a single page. When they were first introduced, laser printers typically cost over a thousand dollars. Now prices have dropped to only a few hundred, at most.</p><p>[4] —</p></div><p>Questions 149–151 refer to the following stimulus.</p><p>In which of the positions marked [1], [2], [3] or [4] does the following sentence best belong?</p><p><em>“They operate very quickly.”</em></p>",
+    "options": {
+      "A": "[1]",
+      "B": "[2]",
+      "C": "[3]",
+      "D": "[4]"
+    }
   }
+
+
 
 
     ]
