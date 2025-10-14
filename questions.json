@@ -105,8 +105,8 @@
       "id": "I1",
       "text": "What choice from A to D is more related to the image?",
       "media": [
-        { "type": "audio", "src": "https://example.com/audio6.mp3" },
-        { "type": "image", "src": "https://i.imgur.com/i5lVdsd.jpeg" }
+        { "type": "audio", "src": "tracks/6/1.mp3" },
+        { "type": "image", "src": "images/vase.png" }
       ],
       "options": {
         "A": "A",
@@ -119,8 +119,8 @@
       "id": "I2",
       "text": "What choice from A to D is more related to the image?",
       "media": [
-        { "type": "audio", "src": "https://example.com/audio6.mp3" },
-        { "type": "image", "src": "https://i.imgur.com/i5lVdsd.jpeg" }
+        { "type": "audio", "src": "tracks/6/2.mp3" },
+        { "type": "image", "src": "images/old designer work.png" }
       ],
       "options": {
         "A": "A",
@@ -133,8 +133,8 @@
       "id": "I3",
       "text": "What choice from A to D is more related to the image?",
       "media": [
-        { "type": "audio", "src": "https://example.com/audio6.mp3" },
-        { "type": "image", "src": "https://i.imgur.com/i5lVdsd.jpeg" }
+        { "type": "audio", "src": "tracks/6/3.mp3" },
+        { "type": "image", "src": "images/truck.png" }
       ],
       "options": {
         "A": "A",
@@ -147,8 +147,8 @@
       "id": "I4",
       "text": "What choice from A to D is more related to the image?",
       "media": [
-        { "type": "audio", "src": "https://example.com/audio6.mp3" },
-        { "type": "image", "src": "https://i.imgur.com/i5lVdsd.jpeg" }
+        { "type": "audio", "src": "tracks/6/4.mp3" },
+        { "type": "image", "src": "images/old man taking a photo.png" }
       ],
       "options": {
         "A": "A",
@@ -161,8 +161,8 @@
       "id": "I5",
       "text": "What choice from A to D is more related to the image?",
       "media": [
-        { "type": "audio", "src": "https://example.com/audio6.mp3" },
-        { "type": "image", "src": "https://i.imgur.com/i5lVdsd.jpeg" }
+        { "type": "audio", "src": "tracks/6/5.mp3" },
+        { "type": "image", "src": "images/plates in drawer.png" }
       ],
       "options": {
         "A": "A",
