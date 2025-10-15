@@ -506,6 +506,54 @@ nav.appendChild(btnNext);
   if(nameHeader.textContent == "Student: null") {nameHeader.textContent = "Student: N/A"}
   list.appendChild(nameHeader);
 
+  // === Compact Grid of Answers ===
+const gridContainer = document.createElement('div');
+gridContainer.className = 'answer-grid';
+gridContainer.style.display = 'grid';
+gridContainer.style.gridTemplateColumns = 'repeat(10, 1fr)';
+gridContainer.style.gap = '6px';
+gridContainer.style.marginBottom = '20px';
+
+state.questions.forEach((q, idx) => {
+  const selected = state.answers[q.id] || null;
+
+  const gridItem = document.createElement('div');
+  gridItem.className = 'answer-grid-item';
+  gridItem.style.position = 'relative';           // needed for absolute index
+  gridItem.style.border = '1px solid #ccc';
+  gridItem.style.borderRadius = '4px';
+  gridItem.style.padding = '8px';
+  gridItem.style.fontSize = '12px';
+  gridItem.style.textAlign = 'center';
+  gridItem.style.background = selected ? '#e0f7e0' : '#f5f5f5';
+  gridItem.style.height = '40px';                // fixed height for uniform grid
+  gridItem.style.display = 'flex';
+  gridItem.style.alignItems = 'center';
+  gridItem.style.justifyContent = 'center';
+
+  // Index on top-left corner
+  const indexLabel = document.createElement('div');
+  indexLabel.textContent = idx + 1;
+  indexLabel.style.position = 'absolute';
+  indexLabel.style.top = '2px';
+  indexLabel.style.left = '4px';
+  indexLabel.style.fontSize = '10px';
+  indexLabel.style.fontWeight = 'bold';
+  indexLabel.style.color = '#555';
+
+  gridItem.appendChild(indexLabel);
+
+  // Centered answer
+  const answerLabel = document.createElement('div');
+  answerLabel.textContent = `${q.id || idx + 1}: ${selected || '-'}`
+  gridItem.appendChild(answerLabel);
+
+  gridContainer.appendChild(gridItem);
+});
+
+// Append grid above your list
+list.appendChild(gridContainer, list);
+
   state.questions.forEach((q, idx) => {
     const selected = state.answers[q.id] || null;
     const selectedText = selected ? (q.options && q.options[selected] ? q.options[selected] : '') : '(no answer)';
@@ -565,7 +613,7 @@ nav.appendChild(btnNext);
   btnExportPDF.textContent = 'Export answers to PDF';
   btnExportPDF.addEventListener('click', () => {
     // update name in reviewDiv before exporting
-    document.getElementById('studentNameDisplay').textContent = `Student: ${state.studentName || 'N/A'}`;
+    document.getElementById('studentNameDisplay').textContent = `Student: ${studentName || 'N/A'}`;
     exportAnswersToPDF();
   });
 
@@ -589,23 +637,81 @@ nav.appendChild(btnNext);
 
   function exportAnswersToPDF() {
   const element = document.getElementById('reviewDiv');
-  let nameInput  = document.getElementById('studentName')?.value || 'student';
-  if (studentName && nameInput) {
-    nameInput.value = studentName;
-  }
+  const nameInputEl = document.getElementById('studentName');
+  const nameInput = nameInputEl?.value?.trim() || 'student';
+
+  // Build metadata object
+  const metadata = {
+    student: nameInput,
+    date: new Date().toLocaleDateString(),
+    time: new Date().toLocaleTimeString(),
+    timestamp: new Date().toISOString(),
+    totalQuestions: state.questions.length,
+    answers: state.questions.map((q) => {
+      const selected = state.answers[q.id] || null;
+      const selectedText =
+        selected && q.options && q.options[selected]
+          ? q.options[selected]
+          : '(no answer)';
+
+      return {
+        id: q.id, // Example: "audio 10"
+        options: selected
+          ? { [selected]: selectedText }
+          : {}, // empty if no answer
+      };
+    }),
+  };
+
+  // Create hidden metadata div
+  let hiddenDiv = document.getElementById('pdfHiddenMetadata');
+  if (hiddenDiv) hiddenDiv.remove(); // remove old metadata block if exists
+
+  hiddenDiv = document.createElement('div');
+  hiddenDiv.id = 'pdfHiddenMetadata';
+  hiddenDiv.style.color = '#ffffff';     // invisible white text
+  hiddenDiv.style.fontSize = '1px';      // tiny so it doesn’t affect layout
+  hiddenDiv.style.marginTop = '50px';
+  hiddenDiv.textContent = JSON.stringify(metadata);
+  element.appendChild(hiddenDiv);
+
   const filename = `answers_${nameInput}.pdf`;
 
   const opt = {
-    margin:       10,
-    filename:     filename,
-    image:        { type: 'jpeg', quality: 0.98 },
-    html2canvas:  { scale: 2, useCORS: true, scrollY: 0 },
-    jsPDF:        { unit: 'mm', format: 'a4', orientation: 'portrait' },
-    pagebreak:    { mode: ['avoid-all', 'css', 'legacy'] }
+    margin: 10,
+    filename: filename,
+    image: { type: 'jpeg', quality: 0.98 },
+    html2canvas: { scale: 2, useCORS: true, scrollY: 0 },
+    jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' },
+    pagebreak: { mode: ['avoid-all', 'css', 'legacy'] },
+    pdfCallback: function (pdf) {
+      // --- Embed JSON in PDF metadata ---
+      pdf.setProperties({
+        title: `Answers for ${nameInput}`,
+        subject: 'Embedded Quiz Metadata',
+        author: nameInput,
+        keywords: 'quiz, metadata, answers',
+        creator: 'YourAppName',
+      });
+
+      // Add custom Info dictionary key
+      try {
+        // Many PDF viewers support custom info keys
+        const info = pdf.internal.streamInfo || {};
+        info.QuizMetadata = JSON.stringify(metadata);
+        pdf.internal.streamInfo = info;
+      } catch (err) {
+        console.warn('Failed to add custom metadata', err);
+      }
+    },
   };
 
-  html2pdf().set(opt).from(element).save();
+  html2pdf().set(opt).from(element).save().then(() => {
+    hiddenDiv.remove();
+  });
 }
+
+
 
 
   // initialize
