@@ -240,7 +240,7 @@
 
     {
       "id": "audio 1",
-      "text": "<strong>(Audio 1)</strong>What is the speaker promoting?",
+      "text": "<p><strong>(Audio 1)</strong>Here the audio refers to three different questions</p>What is the speaker promoting?",
       "media": [
         { "type": "audio", "src": "tracks/4/main.mp3" },
         { "type": "audio", "src": "tracks/4/1.mp3" }
@@ -254,7 +254,7 @@
     },
     {
       "id": "audio 2",
-      "text": "<strong>(Audio 1)</strong>Where does this talk take place?",
+      "text": "<p><strong>(Audio 1)</strong>Here the audio refers to three different questions</p>Where does this talk take place?",
       "media": [
         { "type": "audio", "src": "tracks/4/main.mp3" },
         { "type": "audio", "src": "tracks/4/2.mp3" }
@@ -268,7 +268,7 @@
     },
     {
       "id": "audio 3",
-      "text": "<strong>(Audio 1)</strong>According to the speaker, why are foreign buyers interested in Irish products?",
+      "text": "<p><strong>(Audio 1)</strong>Here the audio refers to three different questions</p>According to the speaker, why are foreign buyers interested in Irish products?",
       "media": [
         { "type": "audio", "src": "tracks/4/main.mp3" },
         { "type": "audio", "src": "tracks/4/3.mp3" }
@@ -282,7 +282,7 @@
     },
     {
       "id": "audio 4",
-      "text": "<strong>(Audio 2)</strong>Why is the SmartShares company in the news?",
+      "text": "<p><strong>(Audio 2)</strong>Here the audio refers to three different questions</p>Why is the SmartShares company in the news?",
       "media": [
         { "type": "audio", "src": "tracks/4/main 2.mp3" },
         { "type": "audio", "src": "tracks/4/4.mp3" }
@@ -296,7 +296,7 @@
     },
     {
       "id": "audio 5",
-      "text": "<strong>(Audio 2)</strong>According to the report, what is improving for workers in Thailand?",
+      "text": "<p><strong>(Audio 2)</strong>Here the audio refers to three different questions</p>According to the report, what is improving for workers in Thailand?",
       "media": [
         { "type": "audio", "src": "tracks/4/main 2.mp3" },
         { "type": "audio", "src": "tracks/4/5.mp3" }
@@ -310,7 +310,7 @@
     },
     {
       "id": "audio 6",
-      "text": "<strong>(Audio 2)</strong><p>Look at the graphic. What time will the East Asia report begin?</p><table border='1' cellpadding='6' cellspacing='0' style='border-collapse:collapse; text-align:left;'><tr><td></td><td>Presenter</td></tr><tr><td>Airline A</td><td>Mark Francis</td></tr><tr><td>Airline A</td><td></td></tr><tr><td>Airline A</td><td></td></tr><tr><td>Airline A</td><td>Jane Withers</td></tr></table>",
+      "text": "<p><strong>(Audio 2)</strong>Here the audio refers to three different questions</p><p>Look at the graphic. What time will the East Asia report begin?</p><table border='1' cellpadding='6' cellspacing='0' style='border-collapse:collapse; text-align:left;'><tr><td></td><td>Presenter</td></tr><tr><td>Airline A</td><td>Mark Francis</td></tr><tr><td>Airline A</td><td></td></tr><tr><td>Airline A</td><td></td></tr><tr><td>Airline A</td><td>Jane Withers</td></tr></table>",
       "media": [
         { "type": "audio", "src": "tracks/4/main 2.mp3" },
         { "type": "audio", "src": "tracks/4/6.mp3" }
@@ -324,7 +324,7 @@
     },
     {
       "id": "audio 7",
-      "text": "<strong>(Audio 3)</strong>What kind of store is Dunthorps?",
+      "text": "<p><strong>(Audio 3)</strong>Here the audio refers to three different questions</p>What kind of store is Dunthorps?",
       "media": [
         { "type": "audio", "src": "tracks/4/main 3.mp3" },
         { "type": "audio", "src": "tracks/4/7.mp3" }
@@ -338,7 +338,7 @@
     },
     {
       "id": "audio 8",
-      "text": "<strong>(Audio 3)</strong>Why does the speaker say, “it’s crazy!”?",
+      "text": "<p><strong>(Audio 3)</strong>Here the audio refers to three different questions</p>Why does the speaker say, “it’s crazy!”?",
       "media": [
         { "type": "audio", "src": "tracks/4/main 3.mp3" },
         { "type": "audio", "src": "tracks/4/8.mp3" }
@@ -352,7 +352,7 @@
     },
     {
       "id": "audio 9",
-      "text": "<strong>(Audio 3)</strong>When does the sale end?",
+      "text": "<p><strong>(Audio 3)</strong>Here the audio refers to three different questions</p>When does the sale end?",
       "media": [
         { "type": "audio", "src": "tracks/4/main 3.mp3" },
         { "type": "audio", "src": "tracks/4/9.mp3" }
@@ -366,7 +366,7 @@
     },
     {
       "id": "audio 10",
-      "text": "<strong>(Audio 4)</strong>Where did the artist get the idea for his piece?",
+      "text": "<p><strong>(Audio 4)</strong></p>Where did the artist get the idea for his piece?",
       "media": [
         { "type": "audio", "src": "tracks/4/main 4.mp3" },
         { "type": "audio", "src": "tracks/4/10.mp3" }
