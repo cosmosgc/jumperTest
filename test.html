@@ -1,0 +1,634 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="B4 placement">
+  <meta property="og:description" content="Application test">
+  <meta property="og:image" content="https://cosmosgc.github.io/jumperTest/Content/logo-jumper-profissoes-idiomas.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://cosmosgc.github.io/jumperTest/">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="B4 placement">
+  <meta property="twitter:description" content="Application test">
+  <meta property="twitter:image:src" content="https://cosmosgc.github.io/jumperTest/Content/logo-jumper-profissoes-idiomas.png">
+
+  <title>B4 placement</title>
+  <style>
+    :root{
+      --bg:#f6f8fb;
+      --card:#ffffff;
+      --accent:#2b6cb0;
+      --muted:#65738a;
+      --success:#059669;
+    }
+    html,body{height:100%}
+    body{
+      margin:0;
+        font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+        background:linear-gradient(180deg, #e9eef8 0%, var(--bg) 100%);
+        color:#0f172a;
+        padding:24px;
+        min-height:100vh;
+        display:block;  /* Allow scrolling instead of vertical centering */
+    }
+    .app {
+      width:93%;
+        max-width:980px;
+        background:var(--card);
+        box-shadow:0 8px 30px rgba(17,24,39,0.08);
+        border-radius:12px;
+        padding:20px;
+        margin: 0 auto;         /* center horizontally */
+    }
+    header{display:flex;align-items:center;gap:14px;margin-bottom:16px}
+    header h1{font-size:1.25rem;margin:0}
+    .meta{margin-left:auto;color:var(--muted);font-size:0.9rem}
+    .progress{
+      height:8px;background:#e6eefc;border-radius:999px;margin:12px 0;overflow:hidden;
+    }
+    .progress > i{display:block;height:100%;background:linear-gradient(90deg,var(--accent),#4c9aff);width:0%;}
+    .card{
+      padding:18px;border-radius:10px;background:linear-gradient(180deg, rgba(255,255,255,0.9), rgba(255,255,255,0.96));
+      border:1px solid rgba(11,24,50,0.04);
+      margin-bottom:12px;
+    }
+    .question-num{font-size:0.9rem;color:var(--muted);margin-bottom:6px}
+    .question-text{font-size:1.05rem;margin-bottom:12px}
+    .media{
+        margin: 8px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .options{display:flex;flex-direction:column;gap:8px}
+    .option{
+      display:flex;align-items:center;gap:12px;padding:10px;border-radius:8px;border:1px solid rgba(11,24,50,0.04);cursor:pointer;
+      transition:all .12s;
+      background:#fff;
+    }
+    .option:hover{transform:translateY(-2px)}
+    .option input{accent-color:var(--accent);transform:scale(1.15)}
+    .nav{display:flex;gap:8px;justify-content:flex-end;align-items:center;margin-top:12px}
+    button{background:var(--accent);color:white;padding:8px 12px;border-radius:8px;border:0;cursor:pointer;font-weight:600}
+    button.ghost{background:transparent;border:1px solid rgba(11,24,50,0.06);color:var(--muted);font-weight:600}
+    button:disabled{opacity:.45;cursor:not-allowed}
+    .review-list{display:flex;flex-direction:column;gap:10px}
+    .review-item{padding:12px;border-radius:8px;border:1px solid rgba(11,24,50,0.04);display:flex;justify-content:space-between;align-items:center;background:#fff}
+    .review-item .left{max-width:80%}
+    .small{font-size:0.9rem;color:var(--muted)}
+    footer{display:flex;justify-content:space-between;align-items:center;margin-top:10px;color:var(--muted);font-size:0.9rem}
+    @media (max-width:600px){
+      .nav{flex-direction:column-reverse;align-items:stretch}
+      button{width:100%}
+      .index-btn{width: inherit;}
+    }
+    .btn-pdf{background:linear-gradient(90deg,var(--success),#10b981)}
+    .index-footer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.index-btn {
+  background: #e6eaf0;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.2s;
+  width: inherit;
+}
+
+.index-btn:hover {
+  background: #d0d5de;
+}
+
+.index-btn.active {
+  background: #3b82f6;
+  color: white;
+}
+
+  </style>
+</head>
+<body>
+  <div class="app" role="application" aria-label="JSON Quiz App">
+    <header>
+      <img src="Content/logo-jumper-profissoes-idiomas.svg" alt="" width="200" height="36">
+      <h1>B4 placement</h1>
+      <div class="meta" id="metaInfo">Question <span id="metaCurrent">1</span> / <span id="metaTotal">1</span></div>
+    </header>
+
+    <div class="progress" aria-hidden="true"><i id="progressBar"></i></div>
+
+    <main id="mainArea">
+      <!-- dynamic -->
+    </main>
+
+    <footer>
+      <div class="small">Answers are saved while you navigate. You can edit before exporting.</div>
+      <div class="small">Test Aplication.</div>
+    </footer>
+  </div>
+
+  <!-- html2pdf (client-side PDF generation) -->
+  <script src="html2pdf.bundle.min.js"></script>
+
+  <script>
+  let quizJson = {
+    "title": "Sample Quiz with Embedded Media",
+    "questions": [
+      {
+        "id": 1,
+        "text": "Which planet is known as the Red Planet?",
+        "media": null,
+        "options": { "A": "Earth", "B": "Venus", "C": "Mars", "D": "Jupiter" }
+      },
+      {
+        "id": 2,
+        "text": "Identify the animal in the image.",
+        "media": { "type": "image", "src": "https://upload.wikimedia.org/wikipedia/commons/7/73/Lion_waiting_in_Namibia.jpg", "alt":"lion" },
+        "options": { "A": "Tiger", "B": "Lion", "C": "Leopard", "D": "Cheetah" }
+      },
+      {
+        "id": 3,
+        "text": "Listen and choose the correct instrument.",
+        "media": { "type": "audio", "src": "https://www2.cs.uic.edu/~i101/SoundFiles/StarWars60.wav" },
+        "options": { "A": "Guitar", "B": "Piano", "C": "Violin", "D": "Synth" }
+      },
+      {
+        "id": 4,
+        "text": "Watch the short clip and answer: what color is the car shown?",
+        "media": { "type": "video", "src": "https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" },
+        "options": { "A": "Red", "B": "Blue", "C": "Green", "D": "Yellow" }
+      },
+      {
+        "id": 5,
+        "text": "Final: pick the correct statement about JSON.",
+        "media": null,
+        "options": { "A": "Stands for JavaScript Only Notation", "B": "Is a binary format", "C": "Human-readable text format", "D": "Cannot represent arrays" }
+      }
+    ]
+  };
+
+  // fetch the JSON file
+fetch('questions.json')
+  .then(response => {
+    if (!response.ok) throw new Error('Failed to load quiz file');
+    return response.json();
+  })
+  .then(data => {
+    quizJson = data;
+    state.questions = quizJson.questions || [];
+    document.title = quizJson.title || 'Quiz';
+
+    // set total meta and render
+    document.getElementById('metaTotal').textContent = state.questions.length;
+    render();
+  })
+  .catch(err => {
+    console.error(err);
+    // document.getElementById('mainArea').innerHTML = `<div class="card">❌ Could not load quiz file.</div>`;
+  });
+
+  // Application state
+  const state = {
+    questions: quizJson.questions || [],
+    currentIndex: 0,
+    answers: {}, // mapping questionId -> selected letter (e.g. {1: "C", 2: "B"})
+  };
+
+  // 🔹 Get the "name" parameter from the URL
+  function getStudentNameFromURL() {
+    const params = new URLSearchParams(window.location.search);
+    const name = params.get('name');
+    return name ? name.trim() : null;
+  }
+
+  const studentName = getStudentNameFromURL();
+
+  // 🔹 Build unique storage key if name exists
+  const baseStorageKey = 'json_quiz_answers_v1';
+  const storageKey = studentName ? `${baseStorageKey}_${studentName}` : baseStorageKey;
+
+  // 🔸 Restore saved answers from sessionStorage (optional)
+  try {
+    const saved = sessionStorage.getItem(storageKey);
+    if (saved) {
+      const parsed = JSON.parse(saved);
+      if (parsed && parsed.answers) {
+        state.answers = parsed.answers;
+        console.log(`✅ Loaded saved answers for ${studentName || 'default session'}`);
+      }
+    }
+  } catch (e) {
+    console.warn('Error loading saved state:', e);
+  }
+
+  // 🔸 Save state to sessionStorage
+  function saveState() {
+    if (!studentName) {
+      console.warn('No student name — state not saved');
+      return; // stop the function
+    }
+    try {
+      sessionStorage.setItem(
+        storageKey,
+        JSON.stringify({ answers: state.answers })
+      );
+    } catch (e) {
+      console.warn('Error saving state:', e);
+    }
+  }
+
+
+  function $(sel, ctx=document) { return ctx.querySelector(sel); }
+  function $all(sel, ctx=document) { return Array.from(ctx.querySelectorAll(sel)); }
+
+  // Render functions
+  function render(){
+    const total = state.questions.length;
+    if (state.currentIndex < 0) state.currentIndex = 0;
+    if (state.currentIndex > total) state.currentIndex = total;
+
+    $('#metaCurrent').textContent = Math.min(state.currentIndex + 1, total);
+    $('#metaTotal').textContent = total;
+    const pct = total ? Math.round((state.currentIndex / total) * 100) : 0;
+    $('#progressBar').style.width = pct + '%';
+
+    const main = document.getElementById('mainArea');
+    main.innerHTML = ''; // reset
+
+    // If currentIndex equals total -> show review
+    if (state.currentIndex === total) {
+      renderReview(main);
+      return;
+    }
+
+    const q = state.questions[state.currentIndex];
+    if (!q) {
+      main.innerHTML = '<div class="card">No question found.</div>';
+      return;
+    }
+
+    const card = document.createElement('section');
+    card.className = 'card';
+    card.setAttribute('aria-live','polite');
+
+    const qnum = document.createElement('div');
+    qnum.className = 'question-num';
+    qnum.textContent = `Question ${state.currentIndex + 1} of ${total} (id: ${q.id})`;
+    card.appendChild(qnum);
+
+    const qtext = document.createElement('div');
+    qtext.className = 'question-text';
+    qtext.innerHTML = q.text || '';
+    card.appendChild(qtext);
+
+    if (q.media && Array.isArray(q.media)) {
+        const mdiv = document.createElement('div');
+        mdiv.className = 'media';
+        card.appendChild(mdiv);
+
+        q.media.forEach(m => {
+            if (!m || !m.type || !m.src) return;
+
+            if (m.type === 'image') {
+            const img = document.createElement('img');
+            img.src = m.src;
+            img.alt = m.alt || (`Question ${q.id} image`);
+            img.style.maxWidth = '100%';
+            img.style.maxHeight = '400px';
+            img.style.flex = "";
+            img.style.borderRadius = '8px';
+            img.style.marginTop = '8px';
+            mdiv.appendChild(img);
+
+            } else if (m.type === 'audio') {
+            const audio = document.createElement('audio');
+            audio.controls = true;
+            audio.src = m.src;
+            audio.style.width = '100%';
+            audio.style.marginTop = '8px';
+            mdiv.appendChild(audio);
+
+            } else if (m.type === 'video') {
+            const video = document.createElement('video');
+            video.controls = true;
+            video.src = m.src;
+            video.style.maxWidth = '100%';
+            video.style.borderRadius = '8px';
+            video.style.marginTop = '8px';
+            mdiv.appendChild(video);
+
+            } else {
+            const span = document.createElement('div');
+            span.textContent = `Unsupported media type: ${m.type}`;
+            span.style.marginTop = '8px';
+            mdiv.appendChild(span);
+            }
+        });
+    }
+
+
+    // Options: expected as object mapping letters -> text
+    const optsContainer = document.createElement('div');
+    optsContainer.className = 'options';
+    const options = q.options || {};
+    const letters = Object.keys(options);
+    if (letters.length === 0 && Array.isArray(q.optionsArray)) {
+      // fallback if user provided array of options; auto-assign letters
+      q.options = {};
+      const alpha = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+      q.optionsArray.forEach((t,i)=> q.options[alpha[i]] = t);
+    }
+
+    const chosen = state.answers[q.id];
+
+    letters.forEach(letter => {
+      const optText = options[letter];
+
+      const label = document.createElement('label');
+      label.className = 'option';
+      label.setAttribute('tabindex','0');
+      label.setAttribute('role','radio');
+      label.setAttribute('aria-checked', chosen === letter ? 'true' : 'false');
+
+      const radio = document.createElement('input');
+      radio.type = 'radio';
+      radio.name = 'q_' + q.id;
+      radio.value = letter;
+      radio.checked = chosen === letter;
+      radio.addEventListener('change', ()=>{
+        state.answers[q.id] = letter;
+        saveState();
+        // update aria-checked for labels
+        $all('.option', card).forEach(l=>{
+          const r = l.querySelector('input[type=radio]');
+          l.setAttribute('aria-checked', r.checked ? 'true' : 'false');
+        });
+      });
+
+      const title = document.createElement('div');
+      title.innerHTML = `<strong style="min-width:22px;display:inline-block">${letter}.</strong> ${optText}`;
+
+      label.appendChild(radio);
+      label.appendChild(title);
+
+      // clicking label should select
+      label.addEventListener('click', (e)=>{
+        if (e.target.tagName.toLowerCase() === 'input') return;
+        radio.checked = true;
+        radio.dispatchEvent(new Event('change', {bubbles:true}));
+      });
+
+      optsContainer.appendChild(label);
+    });
+
+    card.appendChild(optsContainer);
+
+    // Navigation
+    const nav = document.createElement('div');
+nav.className = 'nav';
+
+// Previous Button
+const btnPrev = document.createElement('button');
+btnPrev.className = 'ghost';
+btnPrev.textContent = '← Previous';
+btnPrev.disabled = state.currentIndex === 0;
+btnPrev.addEventListener('click', () => {
+  if (state.currentIndex > 0) {
+    state.currentIndex--;
+    render();
+  }
+});
+
+// Next / Review Button
+const btnNext = document.createElement('button');
+btnNext.textContent = state.currentIndex === (total - 1) ? 'Review' : 'Next →';
+btnNext.addEventListener('click', () => {
+  if (state.currentIndex < total) {
+    state.currentIndex++;
+    render();
+  }
+});
+
+nav.appendChild(btnPrev);
+
+// 📌 Index footer container
+const indexFooter = document.createElement('div');
+indexFooter.className = 'index-footer';
+
+// Generate question index buttons
+for (let i = 0; i < total; i++) {
+  const indexBtn = document.createElement('button');
+  indexBtn.className = 'index-btn';
+  indexBtn.textContent = (i + 1);
+  
+  // Highlight current question
+  if (i === state.currentIndex) {
+    indexBtn.classList.add('active');
+  }
+
+  indexBtn.addEventListener('click', () => {
+    state.currentIndex = i;
+    render();
+  });
+
+  indexFooter.appendChild(indexBtn);
+}
+
+nav.appendChild(indexFooter);
+nav.appendChild(btnNext);
+
+
+
+    card.appendChild(nav);
+    main.appendChild(card);
+  }
+
+  function renderReview(container) {
+  const card = document.createElement('section');
+  card.className = 'card';
+
+  const title = document.createElement('div');
+  title.className = 'question-text';
+  title.textContent = 'Review your answers';
+  card.appendChild(title);
+
+  const small = document.createElement('div');
+  small.className = 'small';
+  small.textContent = 'Click "Edit" to jump back and change any answer.';
+  card.appendChild(small);
+
+  // 📝 Student Name Input
+  const nameWrapper = document.createElement('div');
+  nameWrapper.style.margin = '16px 0';
+
+  const nameLabel = document.createElement('label');
+  nameLabel.textContent = 'Student Name: ';
+  nameLabel.setAttribute('for', 'studentName');
+
+  const nameInput = document.createElement('input');
+  nameInput.type = 'text';
+  nameInput.id = 'studentName';
+  nameInput.placeholder = 'Enter your name...';
+  nameInput.value = state.studentName || studentName;
+
+  nameInput.addEventListener('input', () => {
+    state.studentName = nameInput.value;
+  });
+
+  nameWrapper.appendChild(nameLabel);
+  nameWrapper.appendChild(nameInput);
+  card.appendChild(nameWrapper);
+
+  const list = document.createElement('div');
+  list.className = 'review-list';
+  list.id = 'reviewDiv'; // this is the div we will export to PDF
+  list.style.marginTop = '12px';
+
+  // 🧾 Add student name also inside the reviewDiv for the PDF
+  const nameHeader = document.createElement('div');
+  nameHeader.style.fontWeight = 'bold';
+  nameHeader.style.marginBottom = '12px';
+  nameHeader.id = 'studentNameDisplay';
+  nameHeader.textContent = `Student: ${state.studentName || studentName}`;
+  if(nameHeader.textContent == "Student: null") {nameHeader.textContent = "Student: N/A"}
+  list.appendChild(nameHeader);
+
+  state.questions.forEach((q, idx) => {
+    const selected = state.answers[q.id] || null;
+    const selectedText = selected ? (q.options && q.options[selected] ? q.options[selected] : '') : '(no answer)';
+
+    const item = document.createElement('div');
+    item.className = 'review-item';
+
+    const left = document.createElement('div');
+    left.className = 'left';
+    left.innerHTML = `<div><strong>Q${idx + 1}:</strong> ${q.text}</div>
+                      <div class="small" style="margin-top:6px">Selected: <strong>${selected || '-'}</strong> ${selected ? ' — ' + selectedText : ''}</div>`;
+    item.appendChild(left);
+
+    const right = document.createElement('div');
+    right.style.display = 'flex';
+    right.style.gap = '8px';
+    right.style.alignItems = 'center';
+
+    const editBtn = document.createElement('button');
+    editBtn.className = 'ghost';
+    editBtn.textContent = 'Edit';
+    editBtn.addEventListener('click', () => {
+      // jump to this question
+      state.currentIndex = idx;
+      render();
+      // focus first input for that question
+      setTimeout(() => {
+        const firstInput = document.querySelector(`[name="q_${q.id}"]`);
+        if (firstInput) firstInput.focus();
+      }, 120);
+    });
+
+    right.appendChild(editBtn);
+    item.appendChild(right);
+
+    list.appendChild(item);
+  });
+
+  card.appendChild(list);
+
+  // Action buttons (Export PDF + Back)
+  const nav = document.createElement('div');
+  nav.className = 'nav';
+
+  const btnBack = document.createElement('button');
+  btnBack.className = 'ghost';
+  btnBack.textContent = '← Back to last question';
+  btnBack.addEventListener('click', () => {
+    if (state.questions.length > 0) {
+      state.currentIndex = state.questions.length - 1;
+      render();
+    }
+  });
+
+  const btnExportPDF = document.createElement('button');
+  btnExportPDF.className = 'btn-pdf';
+  btnExportPDF.textContent = 'Export answers to PDF';
+  btnExportPDF.addEventListener('click', () => {
+    // update name in reviewDiv before exporting
+    document.getElementById('studentNameDisplay').textContent = `Student: ${state.studentName || 'N/A'}`;
+    exportAnswersToPDF();
+  });
+
+  nav.appendChild(btnBack);
+  nav.appendChild(btnExportPDF);
+  card.appendChild(nav);
+
+  // Also show a simple JSON preview of answers
+  const pre = document.createElement('pre');
+  pre.style.marginTop = '12px';
+  pre.style.padding = '12px';
+  pre.style.borderRadius = '8px';
+  pre.style.background = '#f3f6fb';
+  pre.style.whiteSpace = 'pre-wrap';
+//   pre.textContent = 'Answers JSON:\n' + JSON.stringify(state.answers, null, 2);
+  card.appendChild(pre);
+
+  container.appendChild(card);
+}
+
+
+  function exportAnswersToPDF() {
+  const element = document.getElementById('reviewDiv');
+  let nameInput  = document.getElementById('studentName')?.value || 'student';
+  if (studentName && nameInput) {
+    nameInput.value = studentName;
+  }
+  const filename = `answers_${nameInput}.pdf`;
+
+  const opt = {
+    margin:       10,
+    filename:     filename,
+    image:        { type: 'jpeg', quality: 0.98 },
+    html2canvas:  { scale: 2, useCORS: true, scrollY: 0 },
+    jsPDF:        { unit: 'mm', format: 'a4', orientation: 'portrait' },
+    pagebreak:    { mode: ['avoid-all', 'css', 'legacy'] }
+  };
+
+  html2pdf().set(opt).from(element).save();
+}
+
+
+  // initialize
+  document.addEventListener('DOMContentLoaded', ()=>{
+    // set total meta
+    $('#metaTotal').textContent = state.questions.length;
+    render();
+  });
+
+  // Keyboard navigation (optional)
+  document.addEventListener('keydown', (e)=>{
+    if (e.key === 'ArrowRight') {
+      if (state.currentIndex < state.questions.length) {
+        state.currentIndex++;
+        render();
+      }
+    } else if (e.key === 'ArrowLeft') {
+      if (state.currentIndex > 0) {
+        state.currentIndex--;
+        render();
+      }
+    }
+  });
+  </script>
+</body>
+</html>
