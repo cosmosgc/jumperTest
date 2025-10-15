@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>JSON Editor</title>
+<style>
+  :root{
+    --bg:#f6f8fb;
+    --card:#ffffff;
+    --accent:#2b6cb0;
+    --muted:#65738a;
+    --success:#059669;
+  }
+  html,body{height:100%}
+  body{
+    margin:0;
+    font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    background:linear-gradient(180deg, #e9eef8 0%, var(--bg) 100%);
+    color:#0f172a;
+    padding:24px;
+    min-height:100vh;
+    display:block;
+  }
+  .app {
+    width:93%;
+    max-width:600px;
+    background:var(--card);
+    box-shadow:0 8px 30px rgba(17,24,39,0.08);
+    border-radius:12px;
+    padding:20px;
+    margin: 0 auto;
+  }
+  header{text-align:center;margin-bottom:20px}
+  header h1{font-size:1.5rem;margin:0;margin-bottom:8px}
+  header p{color:var(--muted);margin:0;font-size:0.95rem}
+  .input-group{
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+    margin-top:20px;
+  }
+  label{font-weight:600;font-size:0.95rem}
+  input[type="text"], textarea{
+    padding:10px;
+    border-radius:8px;
+    border:1px solid rgba(11,24,50,0.1);
+    font-size:1rem;
+    width:100%;
+  }
+  textarea{resize:vertical;min-height:80px}
+  .nav{display:flex;justify-content:flex-end;margin-top:20px;gap:10px}
+  button{
+    background:var(--accent);
+    color:white;
+    padding:10px 14px;
+    border-radius:8px;
+    border:0;
+    cursor:pointer;
+    font-weight:600;
+    font-size:1rem;
+  }
+  button.secondary{
+    background:#64748b;
+  }
+  button.danger{
+    background:#dc2626;
+  }
+  button:disabled{opacity:.5;cursor:not-allowed}
+  footer{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-top:20px;
+    color:var(--muted);
+    font-size:0.9rem;
+  }
+  .question-card{
+    background:#f9fafb;
+    padding:15px;
+    border-radius:10px;
+    margin-top:15px;
+    border:1px solid rgba(11,24,50,0.1);
+  }
+  .options-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:8px;
+  }
+  .meta {
+    text-align:center;
+    color:var(--muted);
+    font-size:0.9rem;
+    margin-top:10px;
+  }
+</style>
+</head>
+<body>
+  <div class="app">
+    <header>
+      <h1>JSON Test Editor</h1>
+      <p>Edit questions and export JSON</p>
+      <div class="meta">
+        Total Questions: <span id="metaTotal">0</span>
+      </div>
+    </header>
+
+    <div class="input-group">
+      <label for="title">Test Title</label>
+      <input type="text" id="title" placeholder="Test title...">
+    </div>
+
+    <div id="questions-container"></div>
+
+    <div class="nav">
+      <button onclick="addQuestion()">+ Add Question</button>
+    </div>
+
+    <div class="nav">
+      <button onclick="exportJSON()">Export</button>
+    </div>
+
+    <footer>
+      JSON Editor • Jumper Test
+    </footer>
+  </div>
+
+<script>
+let questions = [];
+
+function renderQuestions(){
+  const container = document.getElementById('questions-container');
+  container.innerHTML = '';
+  document.getElementById('metaTotal').textContent = questions.length;
+
+  questions.forEach((q, index)=>{
+    const div = document.createElement('div');
+    div.className = 'question-card';
+    div.innerHTML = `
+      <div class="input-group">
+        <label>Question ID</label>
+        <input type="text" value="${q.id}" onchange="updateQuestion(${index}, 'id', this.value)">
+      </div>
+      <div class="input-group">
+        <label>Text</label>
+        <textarea onchange="updateQuestion(${index}, 'text', this.value)">${q.text || ''}</textarea>
+      </div>
+      <div class="input-group">
+        <label>Media (comma separated URLs)</label>
+        <input type="text" value="${(q.media||[]).map(m=>m.src).join(', ')}" onchange="updateMedia(${index}, this.value)">
+      </div>
+      <div class="options-grid">
+        ${['A','B','C','D'].map(opt=>`
+          <div class="input-group">
+            <label>Option ${opt}</label>
+            <input type="text" value="${q.options?.[opt] || ''}" onchange="updateOption(${index}, '${opt}', this.value)">
+          </div>`).join('')}
+      </div>
+      <div class="nav">
+        <button class="danger" onclick="removeQuestion(${index})">Delete</button>
+      </div>
+    `;
+    container.appendChild(div);
+  });
+}
+
+function updateQuestion(index, field, value){
+  questions[index][field] = value;
+}
+
+function updateOption(index, key, value){
+  questions[index].options[key] = value;
+}
+
+function updateMedia(index, value){
+  const urls = value.split(',').map(v=>v.trim()).filter(v=>v);
+  questions[index].media = urls.map(src=>{
+    const type = src.endsWith('.mp3') ? 'audio' : 'image';
+    return {type, src};
+  });
+}
+
+function addQuestion(){
+  questions.push({
+    id: Date.now().toString(),
+    text: '',
+    media: [],
+    options: {A:'',B:'',C:'',D:''}
+  });
+  renderQuestions();
+}
+
+function removeQuestion(index){
+  questions.splice(index,1);
+  renderQuestions();
+}
+
+function exportJSON(){
+  const obj = {
+    title: document.getElementById('title').value,
+    questions: questions
+  };
+  const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(obj, null, 2));
+  const a = document.createElement('a');
+  a.href = dataStr;
+  a.download = "questions.json";
+  a.click();
+}
+
+// ---- FETCH JSON FILE ----
+fetch('questions.json')
+  .then(response => {
+    if (!response.ok) throw new Error('Failed to load quiz file');
+    return response.json();
+  })
+  .then(data => {
+    document.getElementById('title').value = data.title || '';
+    questions = data.questions || [];
+    document.title = data.title || 'Quiz';
+    renderQuestions();
+  })
+  .catch(err => {
+    console.error(err);
+    alert('⚠ Could not load questions.json');
+  });
+
+</script>
+</body>
+</html>

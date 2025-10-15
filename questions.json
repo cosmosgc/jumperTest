@@ -1,104 +1,170 @@
 {
-    "title": "Jumper Test",
-    "questions": [
-      {
-        "id": 1,
-        "text": "The long-time employee was faithful and ____.",
-        "media": null,
-        "options": {
+  "title": "Jumper Test",
+  "questions": [
+    {
+      "id": 1,
+      "text": "The long-time employee was faithful and ____.",
+      "media": null,
+      "options": {
         "A": "honestly",
         "B": "honest",
         "C": "honor",
         "D": "honesty"
-        }
+      }
     },
     {
-        "id": 2,
-        "text": "Next week, a computer trainer will be here to ____ to any questions you may have.",
-        "media": null,
-        "options": {
+      "id": 2,
+      "text": "Next week, a computer trainer will be here to ____ to any questions you may have.",
+      "media": null,
+      "options": {
         "A": "provide",
         "B": "request",
         "C": "respond",
         "D": "answer"
-        }
+      }
     },
     {
-        "id": 3,
-        "text": "He was going to meet us ____ at the restaurant or here.",
-        "media": null,
-        "options": {
+      "id": 3,
+      "text": "He was going to meet us ____ at the restaurant or here.",
+      "media": null,
+      "options": {
         "A": "but",
         "B": "yet",
         "C": "neither",
         "D": "either"
-        }
+      }
     },
     {
-        "id": 4,
-        "text": "The board of directors tried to think ____ all possible options before reaching a decision.",
-        "media": null,
-        "options": {
+      "id": 4,
+      "text": "The board of directors tried to think ____ all possible options before reaching a decision.",
+      "media": null,
+      "options": {
         "A": "of",
         "B": "at",
         "C": "by",
         "D": "as"
-        }
+      }
     },
     {
-        "id": 5,
-        "text": "If the information is public, ____ is neither unreasonable nor unethical to share it.",
-        "media": null,
-        "options": {
+      "id": 5,
+      "text": "If the information is public, ____ is neither unreasonable nor unethical to share it.",
+      "media": null,
+      "options": {
         "A": "his",
         "B": "him",
         "C": "its",
         "D": "it"
-        }
+      }
     },
     {
-        "id": 6,
-        "text": "Timing is ____ important when soliciting contributions for political campaigns.",
-        "media": null,
-        "options": {
+      "id": 6,
+      "text": "Timing is ____ important when soliciting contributions for political campaigns.",
+      "media": null,
+      "options": {
         "A": "accurately",
         "B": "extremely",
         "C": "quickly",
         "D": "hotly"
-        }
+      }
     },
     {
-        "id": 7,
-        "text": "Andrew lives quite a ____ from where he works.",
-        "media": null,
-        "options": {
+      "id": 7,
+      "text": "Andrew lives quite a ____ from where he works.",
+      "media": null,
+      "options": {
         "A": "closeness",
         "B": "space",
         "C": "distance",
         "D": "length"
-        }
+      }
     },
     {
-        "id": 8,
-        "text": "We are able to ____ your conditions of delivery per your proposal.",
-        "media": null,
-        "options": {
+      "id": 8,
+      "text": "We are able to ____ your conditions of delivery per your proposal.",
+      "media": null,
+      "options": {
         "A": "accepts",
         "B": "accept",
         "C": "accepting",
         "D": "accepted"
-        }
+      }
     },
     {
-        "id": 9,
-        "text": "Next week's seminar ought to provide ____ with a lot of new information.",
-        "media": null,
-        "options": {
+      "id": 9,
+      "text": "Next week's seminar ought to provide ____ with a lot of new information.",
+      "media": null,
+      "options": {
         "A": "we",
         "B": "our",
         "C": "ourselves",
         "D": "us"
-        }
+      }
+    },
+    {
+      "id": 10,
+      "text": "The paper division is showing an increased ____.",
+      "media": null,
+      "options": {
+        "A": "profit",
+        "B": "profiting",
+        "C": "profitable",
+        "D": "profits"
+      }
+    },
+    {
+      "id": 11,
+      "text": "Dr. Woo left very early this morning, but ____ because he forgot his briefcase.",
+      "media": null,
+      "options": {
+        "A": "revolved",
+        "B": "returned",
+        "C": "recalled",
+        "D": "remembered"
+      }
+    },
+    {
+      "id": 12,
+      "text": "Payment is due in full within 30 days upon ____ of this invoice.",
+      "media": null,
+      "options": {
+        "A": "receipt",
+        "B": "receive",
+        "C": "reception",
+        "D": "receiving"
+      }
+    },
+    {
+      "id": 13,
+      "text": "Doctors have ____ that stress from work can cause other medical problems.",
+      "media": null,
+      "options": {
+        "A": "find",
+        "B": "finding",
+        "C": "found",
+        "D": "finds"
+      }
+    },
+    {
+      "id": 14,
+      "text": "The warehouse employees have worked overtime every day ____ the last week.",
+      "media": null,
+      "options": {
+        "A": "until",
+        "B": "along",
+        "C": "before",
+        "D": "for"
+      }
+    },
+    {
+      "id": 15,
+      "text": "We do not provide third ____ with biographical information about our clients.",
+      "media": null,
+      "options": {
+        "A": "parties",
+        "B": "people",
+        "C": "impression",
+        "D": "dealings"
+      }
     },
 
     {
@@ -172,203 +238,317 @@
       }
     },
 
-    
-      {
-        "id": 1,
-        "text": "<strong>(Audio 1)</strong>What is the speaker promoting?",
-        "media": [
-          { "type": "audio", "src": "tracks/4/main.mp3" },
-          { "type": "audio", "src": "tracks/4/1.mp3" }
-        ],
-        "options": {
-          "A": "International capital",
-          "B": "Increased imports",
-          "C": "Foreign investment",
-          "D": "Increased export"
-        }
-      },
-      {
-        "id": 2,
-        "text": "<strong>(Audio 1)</strong>Where does this talk take place?",
-        "media": [
-          { "type": "audio", "src": "tracks/4/main.mp3" },
-          { "type": "audio", "src": "tracks/4/2.mp3" }
-        ],
-        "options": {
-          "A": "At a trade conference",
-          "B": "At a business school",
-          "C": "At a corporate board meeting",
-          "D": "At a local government meeting"
-        }
-      },
-      {
-        "id": 3,
-        "text": "<strong>(Audio 1)</strong>According to the speaker, why are foreign buyers interested in Irish products?",
-        "media": [
-          { "type": "audio", "src": "tracks/4/main.mp3" },
-          { "type": "audio", "src": "tracks/4/3.mp3" }
-        ],
-        "options": {
-          "A": "They are reasonably priced.",
-          "B": "They are high quality.",
-          "C": "They are organic.",
-          "D": "They are easily available."
-        }
-      },
-      {
-        "id": 4,
-        "text": "<strong>(Audio 2)</strong>Why is the SmartShares company in the news?",
-        "media": [
-          { "type": "audio", "src": "tracks/4/main 2.mp3" },
-          { "type": "audio", "src": "tracks/4/4.mp3" }
-        ],
-        "options": {
-          "A": "It has laid off a large part of its workforce.",
-          "B": "It has been involved in a criminal court case.",
-          "C": "It has expanded into the East Asian market.",
-          "D": "It has won an important industry award."
-        }
-      },
-      {
-        "id": 5,
-        "text": "<strong>(Audio 2)</strong>According to the report, what is improving for workers in Thailand?",
-        "media": [
-          { "type": "audio", "src": "tracks/4/main 2.mp3" },
-          { "type": "audio", "src": "tracks/4/5.mp3" }
-        ],
-        "options": {
-          "A": "Salaries",
-          "B": "Benefits packages",
-          "C": "Working conditions",
-          "D": "Productivity"
-        }
-      },
-      {
-        "id": 6,
-        "text": "<strong>(Audio 2)</strong><p>Look at the graphic. What time will the East Asia report begin?</p><table border='1' cellpadding='6' cellspacing='0' style='border-collapse:collapse; text-align:left;'><tr><td></td><td>Presenter</td></tr><tr><td>Airline A</td><td>Mark Francis</td></tr><tr><td>Airline A</td><td></td></tr><tr><td>Airline A</td><td></td></tr><tr><td>Airline A</td><td>Jane Withers</td></tr></table>",
-        "media": [
-          { "type": "audio", "src": "tracks/4/main 2.mp3" },
-          { "type": "audio", "src": "tracks/4/6.mp3" }
-        ],
-        "options": {
-          "A": "18:00",
-          "B": "18:05",
-          "C": "18:10",
-          "D": "18:20"
-        }
-      },
-      {
-        "id": 7,
-        "text": "<strong>(Audio 3)</strong>What kind of store is Dunthorps?",
-        "media": [
-          { "type": "audio", "src": "tracks/4/main 3.mp3" },
-          { "type": "audio", "src": "tracks/4/7.mp3" }
-        ],
-        "options": {
-          "A": "Clothing",
-          "B": "Kitchenware",
-          "C": "Department",
-          "D": "Furniture"
-        }
-      },
-      {
-        "id": 8,
-        "text": "<strong>(Audio 3)</strong>Why does the speaker say, “it’s crazy!”?",
-        "media": [
-          { "type": "audio", "src": "tracks/4/main 3.mp3" },
-          { "type": "audio", "src": "tracks/4/8.mp3" }
-        ],
-        "options": {
-          "A": "He thinks the items are too expensive.",
-          "B": "He believes that the sale is not a good idea.",
-          "C": "He thinks the clothes are unusual.",
-          "D": "He thinks the reductions are extreme."
-        }
-      },
-      {
-        "id": 9,
-        "text": "<strong>(Audio 3)</strong>When does the sale end?",
-        "media": [
-          { "type": "audio", "src": "tracks/4/main 3.mp3" },
-          { "type": "audio", "src": "tracks/4/9.mp3" }
-        ],
-        "options": {
-          "A": "End of June",
-          "B": "July 1st",
-          "C": "End of July",
-          "D": "Mid-August"
-        }
-      },
-      {
-        "id": 10,
-        "text": "<strong>(Audio 4)</strong>Where did the artist get the idea for his piece?",
-        "media": [
-          { "type": "audio", "src": "tracks/4/main 4.mp3" },
-          { "type": "audio", "src": "tracks/4/10.mp3" }
-        ],
-        "options": {
-          "A": "France",
-          "B": "The Caribbean",
-          "C": "Austria",
-          "D": "New Zealand"
-        }
-      },
-      
-    
-  {
-    "id": "Table 1",
-    "text": "<table border='1' cellpadding='6' cellspacing='0' style='border-collapse:collapse; text-align:center; width:100%;'><thead><tr><th></th><th>Year 3</th><th>Year 2</th><th>Year 1</th></tr></thead><tbody><tr><td>Sales</td><td>$679,823</td><td>$379,722</td><td>$489,357</td></tr><tr><td>Net Income</td><td>$14,805</td><td>$19,977</td><td>$35,465</td></tr><tr><td>Earnings per Share</td><td>$0.75</td><td>$1.04</td><td>$1.89</td></tr><tr><td>Shareholders Equity</td><td>$275,242</td><td>$257,515</td><td>$245,006</td></tr><tr><td>Return on Equity (1)</td><td>5.3%</td><td>7.8%</td><td>14.5%</td></tr></tbody></table><p style='font-size:0.9em;'><em>(1) Defined as net income divided by shareholder equity, minus extraordinary items. (Periods listed are years ending Dec. 31.)</em></p><p>How much money did each share make in Year 2?</p>",
-    "options": {
+    {
+      "id": "audio 1",
+      "text": "<strong>(Audio 1)</strong>What is the speaker promoting?",
+      "media": [
+        { "type": "audio", "src": "tracks/4/main.mp3" },
+        { "type": "audio", "src": "tracks/4/1.mp3" }
+      ],
+      "options": {
+        "A": "International capital",
+        "B": "Increased imports",
+        "C": "Foreign investment",
+        "D": "Increased export"
+      }
+    },
+    {
+      "id": "audio 2",
+      "text": "<strong>(Audio 1)</strong>Where does this talk take place?",
+      "media": [
+        { "type": "audio", "src": "tracks/4/main.mp3" },
+        { "type": "audio", "src": "tracks/4/2.mp3" }
+      ],
+      "options": {
+        "A": "At a trade conference",
+        "B": "At a business school",
+        "C": "At a corporate board meeting",
+        "D": "At a local government meeting"
+      }
+    },
+    {
+      "id": "audio 3",
+      "text": "<strong>(Audio 1)</strong>According to the speaker, why are foreign buyers interested in Irish products?",
+      "media": [
+        { "type": "audio", "src": "tracks/4/main.mp3" },
+        { "type": "audio", "src": "tracks/4/3.mp3" }
+      ],
+      "options": {
+        "A": "They are reasonably priced.",
+        "B": "They are high quality.",
+        "C": "They are organic.",
+        "D": "They are easily available."
+      }
+    },
+    {
+      "id": "audio 4",
+      "text": "<strong>(Audio 2)</strong>Why is the SmartShares company in the news?",
+      "media": [
+        { "type": "audio", "src": "tracks/4/main 2.mp3" },
+        { "type": "audio", "src": "tracks/4/4.mp3" }
+      ],
+      "options": {
+        "A": "It has laid off a large part of its workforce.",
+        "B": "It has been involved in a criminal court case.",
+        "C": "It has expanded into the East Asian market.",
+        "D": "It has won an important industry award."
+      }
+    },
+    {
+      "id": "audio 5",
+      "text": "<strong>(Audio 2)</strong>According to the report, what is improving for workers in Thailand?",
+      "media": [
+        { "type": "audio", "src": "tracks/4/main 2.mp3" },
+        { "type": "audio", "src": "tracks/4/5.mp3" }
+      ],
+      "options": {
+        "A": "Salaries",
+        "B": "Benefits packages",
+        "C": "Working conditions",
+        "D": "Productivity"
+      }
+    },
+    {
+      "id": "audio 6",
+      "text": "<strong>(Audio 2)</strong><p>Look at the graphic. What time will the East Asia report begin?</p><table border='1' cellpadding='6' cellspacing='0' style='border-collapse:collapse; text-align:left;'><tr><td></td><td>Presenter</td></tr><tr><td>Airline A</td><td>Mark Francis</td></tr><tr><td>Airline A</td><td></td></tr><tr><td>Airline A</td><td></td></tr><tr><td>Airline A</td><td>Jane Withers</td></tr></table>",
+      "media": [
+        { "type": "audio", "src": "tracks/4/main 2.mp3" },
+        { "type": "audio", "src": "tracks/4/6.mp3" }
+      ],
+      "options": {
+        "A": "18:00",
+        "B": "18:05",
+        "C": "18:10",
+        "D": "18:20"
+      }
+    },
+    {
+      "id": "audio 7",
+      "text": "<strong>(Audio 3)</strong>What kind of store is Dunthorps?",
+      "media": [
+        { "type": "audio", "src": "tracks/4/main 3.mp3" },
+        { "type": "audio", "src": "tracks/4/7.mp3" }
+      ],
+      "options": {
+        "A": "Clothing",
+        "B": "Kitchenware",
+        "C": "Department",
+        "D": "Furniture"
+      }
+    },
+    {
+      "id": "audio 8",
+      "text": "<strong>(Audio 3)</strong>Why does the speaker say, “it’s crazy!”?",
+      "media": [
+        { "type": "audio", "src": "tracks/4/main 3.mp3" },
+        { "type": "audio", "src": "tracks/4/8.mp3" }
+      ],
+      "options": {
+        "A": "He thinks the items are too expensive.",
+        "B": "He believes that the sale is not a good idea.",
+        "C": "He thinks the clothes are unusual.",
+        "D": "He thinks the reductions are extreme."
+      }
+    },
+    {
+      "id": "audio 9",
+      "text": "<strong>(Audio 3)</strong>When does the sale end?",
+      "media": [
+        { "type": "audio", "src": "tracks/4/main 3.mp3" },
+        { "type": "audio", "src": "tracks/4/9.mp3" }
+      ],
+      "options": {
+        "A": "End of June",
+        "B": "July 1st",
+        "C": "End of July",
+        "D": "Mid-August"
+      }
+    },
+    {
+      "id": "audio 10",
+      "text": "<strong>(Audio 4)</strong>Where did the artist get the idea for his piece?",
+      "media": [
+        { "type": "audio", "src": "tracks/4/main 4.mp3" },
+        { "type": "audio", "src": "tracks/4/10.mp3" }
+      ],
+      "options": {
+        "A": "France",
+        "B": "The Caribbean",
+        "C": "Austria",
+        "D": "New Zealand"
+      }
+    },
+
+    {
+      "id": "Table 1",
+      "text": "<table border='1' cellpadding='6' cellspacing='0' style='border-collapse:collapse; text-align:center; width:100%;'><thead><tr><th></th><th>Year 3</th><th>Year 2</th><th>Year 1</th></tr></thead><tbody><tr><td>Sales</td><td>$679,823</td><td>$379,722</td><td>$489,357</td></tr><tr><td>Net Income</td><td>$14,805</td><td>$19,977</td><td>$35,465</td></tr><tr><td>Earnings per Share</td><td>$0.75</td><td>$1.04</td><td>$1.89</td></tr><tr><td>Shareholders Equity</td><td>$275,242</td><td>$257,515</td><td>$245,006</td></tr><tr><td>Return on Equity (1)</td><td>5.3%</td><td>7.8%</td><td>14.5%</td></tr></tbody></table><p style='font-size:0.9em;'><em>(1) Defined as net income divided by shareholder equity, minus extraordinary items. (Periods listed are years ending Dec. 31.)</em></p><p>How much money did each share make in Year 2?</p>",
+      "options": {
         "A": "$1.04",
         "B": "$14.50",
         "C": "$14,805",
         "D": "$379,722"
       }
-  },
-  {
-    "id": "table 2",
-    "text": "<table border='1' cellpadding='6' cellspacing='0' style='border-collapse:collapse; text-align:center; width:100%;'><thead><tr><th></th><th>Year 3</th><th>Year 2</th><th>Year 1</th></tr></thead><tbody><tr><td>Sales</td><td>$679,823</td><td>$379,722</td><td>$489,357</td></tr><tr><td>Net Income</td><td>$14,805</td><td>$19,977</td><td>$35,465</td></tr><tr><td>Earnings per Share</td><td>$0.75</td><td>$1.04</td><td>$1.89</td></tr><tr><td>Shareholders Equity</td><td>$275,242</td><td>$257,515</td><td>$245,006</td></tr><tr><td>Return on Equity (1)</td><td>5.3%</td><td>7.8%</td><td>14.5%</td></tr></tbody></table><p style='font-size:0.9em;'><em>(1) Defined as net income divided by shareholder equity, minus extraordinary items. (Periods listed are years ending Dec. 31.)</em></p><p>What must be subtracted to determine Return on Equity?</p>",
-    "options": {
+    },
+    {
+      "id": "table 2",
+      "text": "<table border='1' cellpadding='6' cellspacing='0' style='border-collapse:collapse; text-align:center; width:100%;'><thead><tr><th></th><th>Year 3</th><th>Year 2</th><th>Year 1</th></tr></thead><tbody><tr><td>Sales</td><td>$679,823</td><td>$379,722</td><td>$489,357</td></tr><tr><td>Net Income</td><td>$14,805</td><td>$19,977</td><td>$35,465</td></tr><tr><td>Earnings per Share</td><td>$0.75</td><td>$1.04</td><td>$1.89</td></tr><tr><td>Shareholders Equity</td><td>$275,242</td><td>$257,515</td><td>$245,006</td></tr><tr><td>Return on Equity (1)</td><td>5.3%</td><td>7.8%</td><td>14.5%</td></tr></tbody></table><p style='font-size:0.9em;'><em>(1) Defined as net income divided by shareholder equity, minus extraordinary items. (Periods listed are years ending Dec. 31.)</em></p><p>What must be subtracted to determine Return on Equity?</p>",
+      "options": {
         "A": "extraordinary items",
         "B": "net income",
         "C": "shareholders equity",
         "D": "earnings per share"
       }
-  },
+    },
 
-  {
-    "id": "149",
-    "text": "<div style='border:1px solid #000; padding:10px;'><h3>Laser Printers</h3><p>[1] Laser printers use xerographic technology similar to that used in photocopiers. They can reproduce an almost limitless variety of type forms and sizes, as well as complex graphics.</p><p>[2] Images are electronically created on a light-sensitive drum, usually with a scanning laser. Powdered toner adheres to areas where light touches the drum and then transfers to a sheet of paper, which is briefly heated to fuse the toner to the paper permanently.</p><p>[3] A typical laser printer can print 20 color pages a minute, compared to 12 for an ink-jet printer; older dot-matrix printers can take 45 seconds to print a single page. When they were first introduced, laser printers typically cost over a thousand dollars. Now prices have dropped to only a few hundred, at most.</p><p>[4] —</p></div><p>Questions 149–151 refer to the following stimulus.</p><p>What is implied as an advantage of laser printers?</p>",
-    "options": {
-      "A": "speed",
-      "B": "ease of use",
-      "C": "low ink costs",
-      "D": "superior printing quality"
+    {
+      "id": "149",
+      "text": "<div style='border:1px solid #000; padding:10px;'><h3>Laser Printers</h3><p>[1] Laser printers use xerographic technology similar to that used in photocopiers. They can reproduce an almost limitless variety of type forms and sizes, as well as complex graphics.</p><p>[2] Images are electronically created on a light-sensitive drum, usually with a scanning laser. Powdered toner adheres to areas where light touches the drum and then transfers to a sheet of paper, which is briefly heated to fuse the toner to the paper permanently.</p><p>[3] A typical laser printer can print 20 color pages a minute, compared to 12 for an ink-jet printer; older dot-matrix printers can take 45 seconds to print a single page. When they were first introduced, laser printers typically cost over a thousand dollars. Now prices have dropped to only a few hundred, at most.</p><p>[4] —</p></div><p>What is implied as an advantage of laser printers?</p>",
+      "options": {
+        "A": "speed",
+        "B": "ease of use",
+        "C": "low ink costs",
+        "D": "superior printing quality"
+      }
+    },
+    {
+      "id": "150",
+      "text": "<div style='border:1px solid #000; padding:10px;'><h3>Laser Printers</h3><p>[1] Laser printers use xerographic technology similar to that used in photocopiers. They can reproduce an almost limitless variety of type forms and sizes, as well as complex graphics.</p><p>[2] Images are electronically created on a light-sensitive drum, usually with a scanning laser. Powdered toner adheres to areas where light touches the drum and then transfers to a sheet of paper, which is briefly heated to fuse the toner to the paper permanently.</p><p>[3] A typical laser printer can print 20 color pages a minute, compared to 12 for an ink-jet printer; older dot-matrix printers can take 45 seconds to print a single page. When they were first introduced, laser printers typically cost over a thousand dollars. Now prices have dropped to only a few hundred, at most.</p><p>[4] —</p></div><p>According to the passage, how much did early laser printers cost?</p>",
+      "options": {
+        "A": "a few hundred dollars",
+        "B": "approximately $500",
+        "C": "$500–$700",
+        "D": "over $1,000"
+      }
+    },
+    {
+      "id": "151",
+      "text": "<div style='border:1px solid #000; padding:10px;'><h3>Laser Printers</h3><p>[1] Laser printers use xerographic technology similar to that used in photocopiers. They can reproduce an almost limitless variety of type forms and sizes, as well as complex graphics.</p><p>[2] Images are electronically created on a light-sensitive drum, usually with a scanning laser. Powdered toner adheres to areas where light touches the drum and then transfers to a sheet of paper, which is briefly heated to fuse the toner to the paper permanently.</p><p>[3] A typical laser printer can print 20 color pages a minute, compared to 12 for an ink-jet printer; older dot-matrix printers can take 45 seconds to print a single page. When they were first introduced, laser printers typically cost over a thousand dollars. Now prices have dropped to only a few hundred, at most.</p><p>[4] —</p></div><p>In which of the positions marked [1], [2], [3] or [4] does the following sentence best belong?</p><p><em>“They operate very quickly.”</em></p>",
+      "options": {
+        "A": "[1]",
+        "B": "[2]",
+        "C": "[3]",
+        "D": "[4]"
+      }
+    },
+    {
+      "id": "135",
+      "text": "<p style='border:1px solid #000; padding:10px;'><strong>PhotoMatic</strong> Specialists in professional quality pre-owned and refurbished photographic equipment. <strong>WANTED</strong> We urgently ______(135) your cameras, lenses, cases, and other accessories. We have customers all over North America, Europe, and beyond searching for secondhand professional equipment ______(136) good condition. We are also interested in telescopes, binoculars, and collectable vintage cameras. <strong>Top Prices Paid</strong> We will buy for cash directly but are also happy to sell on your behalf on a commission ______137. We can arrange to collect from you, or you can send directly to your nearest PhotoMatic outlet with shipping and handling charges covered by us. For more details, please contact us at (212) 333-4444, call your nearest PhotoMatic outlet, ______(138).</p>",
+      "options": {
+        "A": "ask",
+        "B": "require",
+        "C": "demand",
+        "D": "invite"
+      }
+    },
+    {
+      "id": "136",
+      "text": "<p style='border:1px solid #000; padding:10px;'><strong>PhotoMatic</strong> Specialists in professional quality pre-owned and refurbished photographic equipment. <strong>WANTED</strong> We urgently ______(135) your cameras, lenses, cases, and other accessories. We have customers all over North America, Europe, and beyond searching for secondhand professional equipment ______(136) good condition. We are also interested in telescopes, binoculars, and collectable vintage cameras. <strong>Top Prices Paid</strong> We will buy for cash directly but are also happy to sell on your behalf on a commission ______137. We can arrange to collect from you, or you can send directly to your nearest PhotoMatic outlet with shipping and handling charges covered by us. For more details, please contact us at (212) 333-4444, call your nearest PhotoMatic outlet, ______(138).</p>",
+      "options": {
+        "A": "on",
+        "B": "at",
+        "C": "of",
+        "D": "in"
+      }
+    },
+    {
+      "id": "137",
+      "text": "<p style='border:1px solid #000; padding:10px;'><strong>PhotoMatic</strong> Specialists in professional quality pre-owned and refurbished photographic equipment. <strong>WANTED</strong> We urgently ______(135) your cameras, lenses, cases, and other accessories. We have customers all over North America, Europe, and beyond searching for secondhand professional equipment ______(136) good condition. We are also interested in telescopes, binoculars, and collectable vintage cameras. <strong>Top Prices Paid</strong> We will buy for cash directly but are also happy to sell on your behalf on a commission ______137. We can arrange to collect from you, or you can send directly to your nearest PhotoMatic outlet with shipping and handling charges covered by us. For more details, please contact us at (212) 333-4444, call your nearest PhotoMatic outlet, ______(138).</p>",
+      "options": {
+        "A": "way",
+        "B": "basis",
+        "C": "kind",
+        "D": "means"
+      }
+    },
+    {
+      "id": "138",
+      "text": "<p style='border:1px solid #000; padding:10px;'><strong>PhotoMatic</strong> Specialists in professional quality pre-owned and refurbished photographic equipment. <strong>WANTED</strong> We urgently ______(135) your cameras, lenses, cases, and other accessories. We have customers all over North America, Europe, and beyond searching for secondhand professional equipment ______(136) good condition. We are also interested in telescopes, binoculars, and collectable vintage cameras. <strong>Top Prices Paid</strong> We will buy for cash directly but are also happy to sell on your behalf on a commission ______137. We can arrange to collect from you, or you can send directly to your nearest PhotoMatic outlet with shipping and handling charges covered by us. For more details, please contact us at (212) 333-4444, call your nearest PhotoMatic outlet, ______(138).</p>",
+      "options": {
+        "A": "thank you for responding to the survey",
+        "B": "or visit us online at www.photomatic.com",
+        "C": "as we are not contactable by phone during the weekdays",
+        "D": "which can be purchased from our store"
+      }
+    },
+    {
+      "id": "139",
+      "text": "<p style='border:1px solid #000; padding:10px;'><strong>NINDO LIMITED WARRANTY</strong> THIS WARRANTY IS VALID ONLY FOR PRODUCTS PURCHASED IN EUROPE. <br>______________________________(139)<br>This product is warranted to the original ______(140) to be free from defects of quality at the time of purchase and for a period of 12 months after the date of purchase. If, during the warranty period, your product is found to be defective, the product will be repaired using NINDO replacement parts, ______(141) the product will be replaced with the same or similar model within a reasonable period of time. To obtain these warranty services, you must produce this card and proof of purchase in the form of a ______(142) sales receipt.</p>",
+      "options": {
+        "A": "For further warranty information, visit www.nindotech.com/fr/warranty.",
+        "B": "Once you have submitted your claim, please allow 4-5 working days for us to ship your replacement.",
+        "C": "For other countries, please contact the store where purchased.",
+        "D": "This is your final warning before eviction."
+      }
+    },
+    {
+      "id": "140",
+      "text": "<p style='border:1px solid #000; padding:10px;'><strong>NINDO LIMITED WARRANTY</strong> THIS WARRANTY IS VALID ONLY FOR PRODUCTS PURCHASED IN EUROPE. <br>______________________________(139)<br>This product is warranted to the original ______(140) to be free from defects of quality at the time of purchase and for a period of 12 months after the date of purchase. If, during the warranty period, your product is found to be defective, the product will be repaired using NINDO replacement parts, ______(141) the product will be replaced with the same or similar model within a reasonable period of time. To obtain these warranty services, you must produce this card and proof of purchase in the form of a ______(142) sales receipt.</p>",
+      "options": {
+        "A": "purchaser",
+        "B": "card",
+        "C": "seller",
+        "D": "store"
+      }
+    },
+    {
+      "id": "141",
+      "text": "<p style='border:1px solid #000; padding:10px;'><strong>NINDO LIMITED WARRANTY</strong> THIS WARRANTY IS VALID ONLY FOR PRODUCTS PURCHASED IN EUROPE. <br>______________________________(139)<br>This product is warranted to the original ______(140) to be free from defects of quality at the time of purchase and for a period of 12 months after the date of purchase. If, during the warranty period, your product is found to be defective, the product will be repaired using NINDO replacement parts, ______(141) the product will be replaced with the same or similar model within a reasonable period of time. To obtain these warranty services, you must produce this card and proof of purchase in the form of a ______(142) sales receipt.</p>",
+      "options": {
+        "A": "so",
+        "B": "and",
+        "C": "or",
+        "D": "too"
+      }
+    },
+    {
+      "id": "142",
+      "text": "<p style='border:1px solid #000; padding:10px;'><strong>NINDO LIMITED WARRANTY</strong> THIS WARRANTY IS VALID ONLY FOR PRODUCTS PURCHASED IN EUROPE. <br>______________________________(139)<br>This product is warranted to the original ______(140) to be free from defects of quality at the time of purchase and for a period of 12 months after the date of purchase. If, during the warranty period, your product is found to be defective, the product will be repaired using NINDO replacement parts, ______(141) the product will be replaced with the same or similar model within a reasonable period of time. To obtain these warranty services, you must produce this card and proof of purchase in the form of a ______(142) sales receipt.</p>",
+      "options": {
+        "A": "buying",
+        "B": "repaired",
+        "C": "defective",
+        "D": "valid"
+      }
+    },
+    {
+      "id": "167",
+      "text": "<p style='border:1px solid #000; padding:10px;'>High pressure moving across northern Mexico will funnel cooler air down the Northwest Coast. Temperatures will be at least 3 to 6 degrees lower throughout Baja, California, and Sonora. The cooler air will not reach the Southwest, where temperatures will soar past 32, some 6 degrees above normal. Because of low humidity and a stable atmosphere, afternoon thunderstorms are unlikely. Dry conditions will also persist across Durango. A low-pressure system will move slowly east through the northeastern region of Mexico today, spreading showers and heavy thunderstorms across Coahuila and Nuevo Leon. Winds from the north behind this system will dislodge a pool of cold air over Texas. The leading edge of this chilled air will reach Monterrey later today, but the core of the cold air will not arrive until midweek. A cold front trailing this low-pressure system will push showers and thunderstorms across the Chihuahua and Durango later today. Showers may form as far west as the eastern slopes of the Sierra Madre.</p><p>What conditions will northwestern Mexico experience</p>",
+      "options": {
+        "A": "cool air",
+        "B": "rain",
+        "C": "low humidity",
+        "D": "dry conditions"
+      }
+    },
+    {
+      "id": "168",
+      "text": "<p style='border:1px solid #000; padding:10px;'>High pressure moving across northern Mexico will funnel cooler air down the Northwest Coast. Temperatures will be at least 3 to 6 degrees lower throughout Baja, California, and Sonora. The cooler air will not reach the Southwest, where temperatures will soar past 32, some 6 degrees above normal. Because of low humidity and a stable atmosphere, afternoon thunderstorms are unlikely. Dry conditions will also persist across Durango. A low-pressure system will move slowly east through the northeastern region of Mexico today, spreading showers and heavy thunderstorms across Coahuila and Nuevo Leon. Winds from the north behind this system will dislodge a pool of cold air over Texas. The leading edge of this chilled air will reach Monterrey later today, but the core of the cold air will not arrive until midweek. A cold front trailing this low-pressure system will push showers and thunderstorms across the Chihuahua and Durango later today. Showers may form as far west as the eastern slopes of the Sierra Madre.</p>Where will temperatures be higher than usual<p></p>",
+      "options": {
+        "A": "Baja, California",
+        "B": "Sonora",
+        "C": "the Southwest",
+        "D": "the northeastern region"
+      }
+    },
+    {
+      "id": "169",
+      "text": "<p style='border:1px solid #000; padding:10px;'>High pressure moving across northern Mexico will funnel cooler air down the Northwest Coast. Temperatures will be at least 3 to 6 degrees lower throughout Baja, California, and Sonora. The cooler air will not reach the Southwest, where temperatures will soar past 32, some 6 degrees above normal. Because of low humidity and a stable atmosphere, afternoon thunderstorms are unlikely. Dry conditions will also persist across Durango. A low-pressure system will move slowly east through the northeastern region of Mexico today, spreading showers and heavy thunderstorms across Coahuila and Nuevo Leon. Winds from the north behind this system will dislodge a pool of cold air over Texas. The leading edge of this chilled air will reach Monterrey later today, but the core of the cold air will not arrive until midweek. A cold front trailing this low-pressure system will push showers and thunderstorms across the Chihuahua and Durango later today. Showers may form as far west as the eastern slopes of the Sierra Madre.</p>When will the majority of the cold air from Texas reach monterrey?<p></p>",
+      "options": {
+        "A": "that morning",
+        "B": "later that afternoon",
+        "C": "the next day",
+        "D": "midweek"
+      }
+    },
+    {
+      "id": "170",
+      "text": "<p style='border:1px solid #000; padding:10px;'>High pressure moving across northern Mexico will funnel cooler air down the Northwest Coast. Temperatures will be at least 3 to 6 degrees lower throughout Baja, California, and Sonora. The cooler air will not reach the Southwest, where temperatures will soar past 32, some 6 degrees above normal. Because of low humidity and a stable atmosphere, afternoon thunderstorms are unlikely. Dry conditions will also persist across Durango. A low-pressure system will move slowly east through the northeastern region of Mexico today, spreading showers and heavy thunderstorms across Coahuila and Nuevo Leon. Winds from the north behind this system will dislodge a pool of cold air over Texas. The leading edge of this chilled air will reach Monterrey later today, but the core of the cold air will not arrive until midweek. A cold front trailing this low-pressure system will push showers and thunderstorms across the Chihuahua and Durango later today. Showers may form as far west as the eastern slopes of the Sierra Madre.</p> <p>What will the cold front cause?</p>",
+      "options": {
+        "A": "dry air",
+        "B": "strong winds",
+        "C": "rainstorms",
+        "D": "snow"
+      }
     }
-  },
-  {
-    "id": "150",
-    "text": "<div style='border:1px solid #000; padding:10px;'><h3>Laser Printers</h3><p>[1] Laser printers use xerographic technology similar to that used in photocopiers. They can reproduce an almost limitless variety of type forms and sizes, as well as complex graphics.</p><p>[2] Images are electronically created on a light-sensitive drum, usually with a scanning laser. Powdered toner adheres to areas where light touches the drum and then transfers to a sheet of paper, which is briefly heated to fuse the toner to the paper permanently.</p><p>[3] A typical laser printer can print 20 color pages a minute, compared to 12 for an ink-jet printer; older dot-matrix printers can take 45 seconds to print a single page. When they were first introduced, laser printers typically cost over a thousand dollars. Now prices have dropped to only a few hundred, at most.</p><p>[4] —</p></div><p>Questions 149–151 refer to the following stimulus.</p><p>According to the passage, how much did early laser printers cost?</p>",
-    "options": {
-      "A": "a few hundred dollars",
-      "B": "approximately $500",
-      "C": "$500–$700",
-      "D": "over $1,000"
-    }
-  },
-  {
-    "id": "151",
-    "text": "<div style='border:1px solid #000; padding:10px;'><h3>Laser Printers</h3><p>[1] Laser printers use xerographic technology similar to that used in photocopiers. They can reproduce an almost limitless variety of type forms and sizes, as well as complex graphics.</p><p>[2] Images are electronically created on a light-sensitive drum, usually with a scanning laser. Powdered toner adheres to areas where light touches the drum and then transfers to a sheet of paper, which is briefly heated to fuse the toner to the paper permanently.</p><p>[3] A typical laser printer can print 20 color pages a minute, compared to 12 for an ink-jet printer; older dot-matrix printers can take 45 seconds to print a single page. When they were first introduced, laser printers typically cost over a thousand dollars. Now prices have dropped to only a few hundred, at most.</p><p>[4] —</p></div><p>Questions 149–151 refer to the following stimulus.</p><p>In which of the positions marked [1], [2], [3] or [4] does the following sentence best belong?</p><p><em>“They operate very quickly.”</em></p>",
-    "options": {
-      "A": "[1]",
-      "B": "[2]",
-      "C": "[3]",
-      "D": "[4]"
-    }
-  }
-
-
-
-
-    ]
-  }
+  ]
+}
