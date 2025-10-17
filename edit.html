@@ -3,6 +3,8 @@
 <head>
 <meta charset="UTF-8" />
 <title>JSON Editor</title>
+<!-- 🪄 ADDED: Quill CSS -->
+<link href="quill/quill.snow.css" rel="stylesheet">
 <style>
   :root{
     --bg:#f6f8fb;
@@ -59,12 +61,8 @@
     font-weight:600;
     font-size:1rem;
   }
-  button.secondary{
-    background:#64748b;
-  }
-  button.danger{
-    background:#dc2626;
-  }
+  button.secondary{background:#64748b;}
+  button.danger{background:#dc2626;}
   button:disabled{opacity:.5;cursor:not-allowed}
   footer{
     display:flex;
@@ -86,11 +84,39 @@
     grid-template-columns:1fr 1fr;
     gap:8px;
   }
-  .meta {
-    text-align:center;
-    color:var(--muted);
-    font-size:0.9rem;
-    margin-top:10px;
+  .meta { text-align:center; color:var(--muted); font-size:0.9rem; margin-top:10px; }
+
+  /* Modal */
+  .modal-overlay{
+    position:fixed;
+    top:0;left:0;
+    width:100%;height:100%;
+    background:rgba(0,0,0,0.5);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    z-index:1000;
+    overflow: scroll;
+  }
+  .modal{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    width:90%;
+    max-width:700px;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+  }
+  .preview-box{
+    border:1px solid #ccc;
+    padding:10px;
+    min-height:100px;
+    background:#fafafa;
+  }
+  /* 🪄 Quill custom tweaks */
+  .ql-container {
+    min-height: 150px;
   }
 </style>
 </head>
@@ -124,6 +150,9 @@
     </footer>
   </div>
 
+<!-- 🪄 ADDED: Quill JS -->
+<script src="quill/quill.js"></script>
+
 <script>
 let questions = [];
 
@@ -143,6 +172,7 @@ function renderQuestions(){
       <div class="input-group">
         <label>Text</label>
         <textarea onchange="updateQuestion(${index}, 'text', this.value)">${q.text || ''}</textarea>
+        <button class="secondary" onclick="openHtmlEditor(${index})">📝 Edit Rich Text</button>
       </div>
       <div class="input-group">
         <label>Media (comma separated URLs)</label>
@@ -204,6 +234,68 @@ function exportJSON(){
   a.href = dataStr;
   a.download = "questions.json";
   a.click();
+}
+
+// 🪄 RICH TEXT MODAL
+function openHtmlEditor(index){
+  const overlay = document.createElement('div');
+  overlay.className = 'modal-overlay';
+  const modal = document.createElement('div');
+  modal.className = 'modal';
+
+  modal.innerHTML = `
+    <h2>Edit Question Content</h2>
+    <div id="toolbar"></div>
+    <div id="quill-editor"></div>
+    <h4>Live Preview</h4>
+    <div class="preview-box" id="html-preview"></div>
+    <div class="nav">
+      <button class="secondary" onclick="closeModal(this)">Cancel</button>
+      <button onclick="saveHtml(${index}, this)">Save</button>
+    </div>
+  `;
+
+  overlay.appendChild(modal);
+  document.body.appendChild(overlay);
+
+  // Initialize Quill
+  const quill = new Quill('#quill-editor', {
+    theme: 'snow',
+    modules: {
+      toolbar: [
+        ['bold', 'italic', 'underline', 'strike'],
+        [{ 'header': 1 }, { 'header': 2 }],
+        [{ 'list': 'ordered'}, { 'list': 'bullet' }],
+        ['link', 'image'],
+        ['clean']
+      ]
+    }
+  });
+
+  quill.root.innerHTML = questions[index].text || '';
+
+  const preview = modal.querySelector('#html-preview');
+  preview.innerHTML = quill.root.innerHTML;
+
+  quill.on('text-change', () => {
+    preview.innerHTML = quill.root.innerHTML;
+  });
+
+  modal._quill = quill;
+}
+
+function saveHtml(index, btn){
+  const modal = btn.closest('.modal');
+  const quill = modal._quill;
+  const value = quill.root.innerHTML;
+  questions[index].text = value;
+  closeModal(btn);
+  renderQuestions();
+}
+
+function closeModal(el){
+  const overlay = el.closest('.modal-overlay');
+  if(overlay) overlay.remove();
 }
 
 // ---- FETCH JSON FILE ----
