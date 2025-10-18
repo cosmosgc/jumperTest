@@ -1,8 +1,8 @@
 {
-  "title": "Jumper Test",
+  "title": "Jumper Preparatório TOEIC -  B4 Placement    ",
   "questions": [
     {
-      "id": 1,
+      "id": "Part 1 - Incomplete sentences",
       "text": "The long-time employee was faithful and ____.",
       "media": null,
       "options": {
@@ -13,7 +13,7 @@
       }
     },
     {
-      "id": 2,
+      "id": "2 - Incomplete sentences",
       "text": "Next week, a computer trainer will be here to ____ to any questions you may have.",
       "media": null,
       "options": {
@@ -24,7 +24,7 @@
       }
     },
     {
-      "id": 3,
+      "id": "3 - Incomplete sentences",
       "text": "He was going to meet us ____ at the restaurant or here.",
       "media": null,
       "options": {
@@ -35,7 +35,7 @@
       }
     },
     {
-      "id": 4,
+      "id": "4 - Incomplete sentences",
       "text": "The board of directors tried to think ____ all possible options before reaching a decision.",
       "media": null,
       "options": {
@@ -46,7 +46,7 @@
       }
     },
     {
-      "id": 5,
+      "id": "5 - Incomplete sentences",
       "text": "If the information is public, ____ is neither unreasonable nor unethical to share it.",
       "media": null,
       "options": {
@@ -57,7 +57,7 @@
       }
     },
     {
-      "id": 6,
+      "id": "6 - Incomplete sentences",
       "text": "Timing is ____ important when soliciting contributions for political campaigns.",
       "media": null,
       "options": {
@@ -68,7 +68,7 @@
       }
     },
     {
-      "id": 7,
+      "id": "7 - Incomplete sentences",
       "text": "Andrew lives quite a ____ from where he works.",
       "media": null,
       "options": {
@@ -79,7 +79,7 @@
       }
     },
     {
-      "id": 8,
+      "id": "8 - Incomplete sentences",
       "text": "We are able to ____ your conditions of delivery per your proposal.",
       "media": null,
       "options": {
@@ -90,7 +90,7 @@
       }
     },
     {
-      "id": 9,
+      "id": "9 - Incomplete sentences",
       "text": "Next week's seminar ought to provide ____ with a lot of new information.",
       "media": null,
       "options": {
@@ -101,7 +101,7 @@
       }
     },
     {
-      "id": 10,
+      "id": "10 - Incomplete sentences",
       "text": "The paper division is showing an increased ____.",
       "media": null,
       "options": {
@@ -112,7 +112,7 @@
       }
     },
     {
-      "id": 11,
+      "id": "11 - Incomplete sentences",
       "text": "Dr. Woo left very early this morning, but ____ because he forgot his briefcase.",
       "media": null,
       "options": {
@@ -123,7 +123,7 @@
       }
     },
     {
-      "id": 12,
+      "id": "12 - Incomplete sentences",
       "text": "Payment is due in full within 30 days upon ____ of this invoice.",
       "media": null,
       "options": {
@@ -134,7 +134,7 @@
       }
     },
     {
-      "id": 13,
+      "id": "13 - Incomplete sentences",
       "text": "Doctors have ____ that stress from work can cause other medical problems.",
       "media": null,
       "options": {
@@ -145,7 +145,7 @@
       }
     },
     {
-      "id": 14,
+      "id": "14 - Incomplete sentences",
       "text": "The warehouse employees have worked overtime every day ____ the last week.",
       "media": null,
       "options": {
@@ -156,7 +156,7 @@
       }
     },
     {
-      "id": 15,
+      "id": "15 - Incomplete sentences",
       "text": "We do not provide third ____ with biographical information about our clients.",
       "media": null,
       "options": {
@@ -166,13 +166,18 @@
         "D": "dealings"
       }
     },
-
     {
-      "id": "I1",
-      "text": "What choice from A to D is more related to the image?",
+      "id": "1 - Part 2 - Listening Comprehension Photographs ",
+      "text": "Directions: For each question, you will hear four statements about the photographs in your test. When you hear the statements, choose the one statement that best describes what you see in the photographs. Which choice from A to D is more related to the image?",
       "media": [
-        { "type": "audio", "src": "tracks/6/1.mp3" },
-        { "type": "image", "src": "images/vase.png" }
+        {
+          "type": "audio",
+          "src": "tracks/6/1.mp3"
+        },
+        {
+          "type": "image",
+          "src": "images/vase.png"
+        }
       ],
       "options": {
         "A": "A",
@@ -182,11 +187,17 @@
       }
     },
     {
-      "id": "I2",
-      "text": "What choice from A to D is more related to the image?",
+      "id": "2 - Part 2 - Listening Comprehension Photographs ",
+      "text": "Which choice from A to D is more related to the image?",
       "media": [
-        { "type": "audio", "src": "tracks/6/2.mp3" },
-        { "type": "image", "src": "images/old designer work.png" }
+        {
+          "type": "audio",
+          "src": "tracks/6/2.mp3"
+        },
+        {
+          "type": "image",
+          "src": "images/old designer work.png"
+        }
       ],
       "options": {
         "A": "A",
@@ -196,11 +207,17 @@
       }
     },
     {
-      "id": "I3",
-      "text": "What choice from A to D is more related to the image?",
+      "id": "3 - Part 2 - Listening Comprehension Photographs  ",
+      "text": "Which choice from A to D is more related to the image?",
       "media": [
-        { "type": "audio", "src": "tracks/6/3.mp3" },
-        { "type": "image", "src": "images/truck.png" }
+        {
+          "type": "audio",
+          "src": "tracks/6/3.mp3"
+        },
+        {
+          "type": "image",
+          "src": "images/truck.png"
+        }
       ],
       "options": {
         "A": "A",
@@ -210,11 +227,17 @@
       }
     },
     {
-      "id": "I4",
-      "text": "What choice from A to D is more related to the image?",
+      "id": "4 -  Part 2 - Listening Comprehension Photographs ",
+      "text": "Which choice from A to D is more related to the image?",
       "media": [
-        { "type": "audio", "src": "tracks/6/4.mp3" },
-        { "type": "image", "src": "images/old man taking a photo.png" }
+        {
+          "type": "audio",
+          "src": "tracks/6/4.mp3"
+        },
+        {
+          "type": "image",
+          "src": "images/old man taking a photo.png"
+        }
       ],
       "options": {
         "A": "A",
@@ -224,11 +247,17 @@
       }
     },
     {
-      "id": "I5",
-      "text": "What choice from A to D is more related to the image?",
+      "id": "5 -  Part 2 - Listening Comprehension Photographs ",
+      "text": "Which choice from A to D is more related to the image?",
       "media": [
-        { "type": "audio", "src": "tracks/6/5.mp3" },
-        { "type": "image", "src": "images/plates in drawer.png" }
+        {
+          "type": "audio",
+          "src": "tracks/6/5.mp3"
+        },
+        {
+          "type": "image",
+          "src": "images/plates in drawer.png"
+        }
       ],
       "options": {
         "A": "A",
@@ -237,13 +266,18 @@
         "D": "D"
       }
     },
-
     {
-      "id": "audio 1",
-      "text": "<p><strong>(Audio 1)</strong>Here the audio refers to three different questions</p>What is the speaker promoting?",
+      "id": "Part 3 - audio 1 refers to the questions 1 to 3",
+      "text": "The listening Comprehension Section, from which you will need to listen to the audio and choose the best answer from the choices listed. Play the track to hear the short talk.\n\n 1-What is the speaker promoting?",
       "media": [
-        { "type": "audio", "src": "tracks/4/main.mp3" },
-        { "type": "audio", "src": "tracks/4/1.mp3" }
+        {
+          "type": "audio",
+          "src": "tracks/4/main.mp3"
+        },
+        {
+          "type": "audio",
+          "src": "tracks/4/1.mp3"
+        }
       ],
       "options": {
         "A": "International capital",
@@ -253,11 +287,17 @@
       }
     },
     {
-      "id": "audio 2",
-      "text": "<p><strong>(Audio 1)</strong>Here the audio refers to three different questions</p>Where does this talk take place?",
+      "id": "Part 3 - audio 1",
+      "text": "The listening Comprehension Section, from which you will need to listen to the audio and choose the best answer from the choices listed. Play the track to hear the short talk.\n\nWhere does this talk take place?",
       "media": [
-        { "type": "audio", "src": "tracks/4/main.mp3" },
-        { "type": "audio", "src": "tracks/4/2.mp3" }
+        {
+          "type": "audio",
+          "src": "tracks/4/main.mp3"
+        },
+        {
+          "type": "audio",
+          "src": "tracks/4/2.mp3"
+        }
       ],
       "options": {
         "A": "At a trade conference",
@@ -267,11 +307,17 @@
       }
     },
     {
-      "id": "audio 3",
-      "text": "<p><strong>(Audio 1)</strong>Here the audio refers to three different questions</p>According to the speaker, why are foreign buyers interested in Irish products?",
+      "id": "Part 3 - audio 1",
+      "text": "The listening Comprehension Section, from which you will need to listen to the audio and choose the best answer from the choices listed. Play the track to hear the short talk.\n\nAccording to the speaker, why are foreign buyers interested in Irish products?",
       "media": [
-        { "type": "audio", "src": "tracks/4/main.mp3" },
-        { "type": "audio", "src": "tracks/4/3.mp3" }
+        {
+          "type": "audio",
+          "src": "tracks/4/main.mp3"
+        },
+        {
+          "type": "audio",
+          "src": "tracks/4/3.mp3"
+        }
       ],
       "options": {
         "A": "They are reasonably priced.",
@@ -281,11 +327,17 @@
       }
     },
     {
-      "id": "audio 4",
-      "text": "<p><strong>(Audio 2)</strong>Here the audio refers to three different questions</p>Why is the SmartShares company in the news?",
+      "id": "Part 3 - audio 2",
+      "text": "The listening Comprehension Section, from which you will need to listen to the audio and choose the best answer from the choices listed. Play the track to hear the short talk.\nWhy is the SmartShares company in the news?",
       "media": [
-        { "type": "audio", "src": "tracks/4/main 2.mp3" },
-        { "type": "audio", "src": "tracks/4/4.mp3" }
+        {
+          "type": "audio",
+          "src": "tracks/4/main 2.mp3"
+        },
+        {
+          "type": "audio",
+          "src": "tracks/4/4.mp3"
+        }
       ],
       "options": {
         "A": "It has laid off a large part of its workforce.",
@@ -295,11 +347,17 @@
       }
     },
     {
-      "id": "audio 5",
-      "text": "<p><strong>(Audio 2)</strong>Here the audio refers to three different questions</p>According to the report, what is improving for workers in Thailand?",
+      "id": "Part 3 - audio 2",
+      "text": "The listening Comprehension Section, from which you will need to listen to the audio and choose the best answer from the choices listed. Play the track to hear the short talk.\n\nAccording to the report, what is improving for workers in Thailand?",
       "media": [
-        { "type": "audio", "src": "tracks/4/main 2.mp3" },
-        { "type": "audio", "src": "tracks/4/5.mp3" }
+        {
+          "type": "audio",
+          "src": "tracks/4/main 2.mp3"
+        },
+        {
+          "type": "audio",
+          "src": "tracks/4/5.mp3"
+        }
       ],
       "options": {
         "A": "Salaries",
@@ -309,11 +367,17 @@
       }
     },
     {
-      "id": "audio 6",
-      "text": "<p><strong>(Audio 2)</strong>Here the audio refers to three different questions</p><p>Look at the graphic. What time will the East Asia report begin?</p><table border='1' cellpadding='6' cellspacing='0' style='border-collapse:collapse; text-align:left;'><tr><td></td><td>Presenter</td></tr><tr><td>Airline A</td><td>Mark Francis</td></tr><tr><td>Airline A</td><td></td></tr><tr><td>Airline A</td><td></td></tr><tr><td>Airline A</td><td>Jane Withers</td></tr></table>",
+      "id": "Part 3 - audio 2",
+      "text": "The listening Comprehension Section, from which you will need to listen to the audio and choose the best answer from the choices listed. Play the track to hear the short talk.\n What time will the East Asia report begin?\n                \n                            \n                            \n",
       "media": [
-        { "type": "audio", "src": "tracks/4/main 2.mp3" },
-        { "type": "audio", "src": "tracks/4/6.mp3" }
+        {
+          "type": "audio",
+          "src": "tracks/4/main 2.mp3"
+        },
+        {
+          "type": "audio",
+          "src": "tracks/4/6.mp3"
+        }
       ],
       "options": {
         "A": "18:00",
@@ -323,11 +387,17 @@
       }
     },
     {
-      "id": "audio 7",
-      "text": "<p><strong>(Audio 3)</strong>Here the audio refers to three different questions</p>What kind of store is Dunthorps?",
+      "id": "Part 3 - audio 3",
+      "text": "The listening Comprehension Section, from which you will need to listen to the audio and choose the best answer from the choices listed. Play the track to hear the short talk.\n\nWhat kind of store is Dunthorps?",
       "media": [
-        { "type": "audio", "src": "tracks/4/main 3.mp3" },
-        { "type": "audio", "src": "tracks/4/7.mp3" }
+        {
+          "type": "audio",
+          "src": "tracks/4/main 3.mp3"
+        },
+        {
+          "type": "audio",
+          "src": "tracks/4/7.mp3"
+        }
       ],
       "options": {
         "A": "Clothing",
@@ -337,11 +407,17 @@
       }
     },
     {
-      "id": "audio 8",
-      "text": "<p><strong>(Audio 3)</strong>Here the audio refers to three different questions</p>Why does the speaker say, “it’s crazy!”?",
+      "id": "Part 3 - audio 3",
+      "text": "The listening Comprehension Section, from which you will need to listen to the audio and choose the best answer from the choices listed. Play the track to hear the short talk.\n\nWhy does the speaker say, “it’s crazy!”?",
       "media": [
-        { "type": "audio", "src": "tracks/4/main 3.mp3" },
-        { "type": "audio", "src": "tracks/4/8.mp3" }
+        {
+          "type": "audio",
+          "src": "tracks/4/main 3.mp3"
+        },
+        {
+          "type": "audio",
+          "src": "tracks/4/8.mp3"
+        }
       ],
       "options": {
         "A": "He thinks the items are too expensive.",
@@ -351,11 +427,17 @@
       }
     },
     {
-      "id": "audio 9",
-      "text": "<p><strong>(Audio 3)</strong>Here the audio refers to three different questions</p>When does the sale end?",
+      "id": "Part 3 - audio 3",
+      "text": "The listening Comprehension Section, from which you will need to listen to the audio and choose the best answer from the choices listed. Play the track to hear the short talk.\n\nWhen does the sale end?",
       "media": [
-        { "type": "audio", "src": "tracks/4/main 3.mp3" },
-        { "type": "audio", "src": "tracks/4/9.mp3" }
+        {
+          "type": "audio",
+          "src": "tracks/4/main 3.mp3"
+        },
+        {
+          "type": "audio",
+          "src": "tracks/4/9.mp3"
+        }
       ],
       "options": {
         "A": "End of June",
@@ -365,11 +447,17 @@
       }
     },
     {
-      "id": "audio 10",
-      "text": "<p><strong>(Audio 4)</strong></p>Where did the artist get the idea for his piece?",
+      "id": "Part 3 - audio 4",
+      "text": "The listening Comprehension Section, from which you will need to listen to the audio and choose the best answer from the choices listed. Play the track to hear the short talk.\n\nWhere did the artist get the idea for his piece?",
       "media": [
-        { "type": "audio", "src": "tracks/4/main 4.mp3" },
-        { "type": "audio", "src": "tracks/4/10.mp3" }
+        {
+          "type": "audio",
+          "src": "tracks/4/main 4.mp3"
+        },
+        {
+          "type": "audio",
+          "src": "tracks/4/10.mp3"
+        }
       ],
       "options": {
         "A": "France",
@@ -378,60 +466,58 @@
         "D": "New Zealand"
       }
     },
-
     {
-      "id": "Table 1",
-      "text": "<table border='1' cellpadding='6' cellspacing='0' style='border-collapse:collapse; text-align:center; width:100%;'><thead><tr><th></th><th>Year 3</th><th>Year 2</th><th>Year 1</th></tr></thead><tbody><tr><td>Sales</td><td>$679,823</td><td>$379,722</td><td>$489,357</td></tr><tr><td>Net Income</td><td>$14,805</td><td>$19,977</td><td>$35,465</td></tr><tr><td>Earnings per Share</td><td>$0.75</td><td>$1.04</td><td>$1.89</td></tr><tr><td>Shareholders Equity</td><td>$275,242</td><td>$257,515</td><td>$245,006</td></tr><tr><td>Return on Equity (1)</td><td>5.3%</td><td>7.8%</td><td>14.5%</td></tr></tbody></table><p style='font-size:0.9em;'><em>(1) Defined as net income divided by shareholder equity, minus extraordinary items. (Periods listed are years ending Dec. 31.)</em></p><p>How much money did each share make in Year 2?</p>",
+      "id": "Part 3 - audio 4 - ",
+      "text": "The listening Comprehension Section, from which you will need to listen to the audio and choose the best answer from the choices listed. Play the track to hear the short talk.\n\nWhat kind of artwork is being discussed?",
       "options": {
-        "A": "$1.04",
-        "B": "$14.50",
-        "C": "$14,805",
-        "D": "$379,722"
+        "A": "Sculpture",
+        "B": "Pencil drawing ",
+        "C": "Painting",
+        "D": "Photographic"
       }
     },
     {
-      "id": "table 2",
-      "text": "<table border='1' cellpadding='6' cellspacing='0' style='border-collapse:collapse; text-align:center; width:100%;'><thead><tr><th></th><th>Year 3</th><th>Year 2</th><th>Year 1</th></tr></thead><tbody><tr><td>Sales</td><td>$679,823</td><td>$379,722</td><td>$489,357</td></tr><tr><td>Net Income</td><td>$14,805</td><td>$19,977</td><td>$35,465</td></tr><tr><td>Earnings per Share</td><td>$0.75</td><td>$1.04</td><td>$1.89</td></tr><tr><td>Shareholders Equity</td><td>$275,242</td><td>$257,515</td><td>$245,006</td></tr><tr><td>Return on Equity (1)</td><td>5.3%</td><td>7.8%</td><td>14.5%</td></tr></tbody></table><p style='font-size:0.9em;'><em>(1) Defined as net income divided by shareholder equity, minus extraordinary items. (Periods listed are years ending Dec. 31.)</em></p><p>What must be subtracted to determine Return on Equity?</p>",
+      "id": "Part 3 - audio 4",
+      "text": "The listening Comprehension Section, from which you will need to listen to the audio and choose the best answer from the choices listed. Play the track to hear the short talk.\n\nWho is the speaker addressing?",
       "options": {
-        "A": "extraordinary items",
-        "B": "net income",
-        "C": "shareholders equity",
-        "D": "earnings per share"
-      }
-    },
-
-    {
-      "id": "149",
-      "text": "<div style='border:1px solid #000; padding:10px;'><h3>Laser Printers</h3><p>[1] Laser printers use xerographic technology similar to that used in photocopiers. They can reproduce an almost limitless variety of type forms and sizes, as well as complex graphics.</p><p>[2] Images are electronically created on a light-sensitive drum, usually with a scanning laser. Powdered toner adheres to areas where light touches the drum and then transfers to a sheet of paper, which is briefly heated to fuse the toner to the paper permanently.</p><p>[3] A typical laser printer can print 20 color pages a minute, compared to 12 for an ink-jet printer; older dot-matrix printers can take 45 seconds to print a single page. When they were first introduced, laser printers typically cost over a thousand dollars. Now prices have dropped to only a few hundred, at most.</p><p>[4] —</p></div><p>What is implied as an advantage of laser printers?</p>",
-      "options": {
-        "A": "speed",
-        "B": "ease of use",
-        "C": "low ink costs",
-        "D": "superior printing quality"
+        "A": "Buyers at an art sale",
+        "B": "An audience at a lecture",
+        "C": "Artists at a workshop",
+        "D": "Visitors to a museum "
       }
     },
     {
-      "id": "150",
-      "text": "<div style='border:1px solid #000; padding:10px;'><h3>Laser Printers</h3><p>[1] Laser printers use xerographic technology similar to that used in photocopiers. They can reproduce an almost limitless variety of type forms and sizes, as well as complex graphics.</p><p>[2] Images are electronically created on a light-sensitive drum, usually with a scanning laser. Powdered toner adheres to areas where light touches the drum and then transfers to a sheet of paper, which is briefly heated to fuse the toner to the paper permanently.</p><p>[3] A typical laser printer can print 20 color pages a minute, compared to 12 for an ink-jet printer; older dot-matrix printers can take 45 seconds to print a single page. When they were first introduced, laser printers typically cost over a thousand dollars. Now prices have dropped to only a few hundred, at most.</p><p>[4] —</p></div><p>According to the passage, how much did early laser printers cost?</p>",
+      "id": "Part 3 - audio 5",
+      "text": "The listening Comprehension Section, from which you will need to listen to the audio and choose the best answer from the choices listed. Play the track to hear the short talk.\n\nWho is Yara Levinsons?",
       "options": {
-        "A": "a few hundred dollars",
-        "B": "approximately $500",
-        "C": "$500–$700",
-        "D": "over $1,000"
+        "A": "The speaker",
+        "B": "The building's architect",
+        "C": "A new employee ",
+        "D": "The company founder"
       }
     },
     {
-      "id": "151",
-      "text": "<div style='border:1px solid #000; padding:10px;'><h3>Laser Printers</h3><p>[1] Laser printers use xerographic technology similar to that used in photocopiers. They can reproduce an almost limitless variety of type forms and sizes, as well as complex graphics.</p><p>[2] Images are electronically created on a light-sensitive drum, usually with a scanning laser. Powdered toner adheres to areas where light touches the drum and then transfers to a sheet of paper, which is briefly heated to fuse the toner to the paper permanently.</p><p>[3] A typical laser printer can print 20 color pages a minute, compared to 12 for an ink-jet printer; older dot-matrix printers can take 45 seconds to print a single page. When they were first introduced, laser printers typically cost over a thousand dollars. Now prices have dropped to only a few hundred, at most.</p><p>[4] —</p></div><p>In which of the positions marked [1], [2], [3] or [4] does the following sentence best belong?</p><p><em>“They operate very quickly.”</em></p>",
+      "id": "Part 3 - audio 5",
+      "text": "The listening Comprehension Section, from which you will need to listen to the audio and choose the best answer from the choices listed. Play the track to hear the short talk.\n\nHow many people will work in the building?",
       "options": {
-        "A": "[1]",
-        "B": "[2]",
-        "C": "[3]",
-        "D": "[4]"
+        "A": "250",
+        "B": "500",
+        "C": "750",
+        "D": "1,000"
       }
     },
     {
-      "id": "135",
+      "id": "Part 3 - audio 5",
+      "text": "The listening Comprehension Section, from which you will need to listen to the audio and choose the best answer from the choices listed. Play the track to hear the short talk.\n\nWhat is the purpose of the talk? ",
+      "options": {
+        "A": "To decide a building ",
+        "B": "To introduce a new employee",
+        "C": "To announce plans for a new building",
+        "D": "To discuss a change in company policy"
+      }
+    },
+    {
+      "id": "Part 4 - 1/4",
       "text": "<p style='border:1px solid #000; padding:10px;'><strong>PhotoMatic</strong> Specialists in professional quality pre-owned and refurbished photographic equipment. <strong>WANTED</strong> We urgently ______(135) your cameras, lenses, cases, and other accessories. We have customers all over North America, Europe, and beyond searching for secondhand professional equipment ______(136) good condition. We are also interested in telescopes, binoculars, and collectable vintage cameras. <strong>Top Prices Paid</strong> We will buy for cash directly but are also happy to sell on your behalf on a commission ______137. We can arrange to collect from you, or you can send directly to your nearest PhotoMatic outlet with shipping and handling charges covered by us. For more details, please contact us at (212) 333-4444, call your nearest PhotoMatic outlet, ______(138).</p>",
       "options": {
         "A": "ask",
@@ -441,7 +527,7 @@
       }
     },
     {
-      "id": "136",
+      "id": "Part 4 - 2/4",
       "text": "<p style='border:1px solid #000; padding:10px;'><strong>PhotoMatic</strong> Specialists in professional quality pre-owned and refurbished photographic equipment. <strong>WANTED</strong> We urgently ______(135) your cameras, lenses, cases, and other accessories. We have customers all over North America, Europe, and beyond searching for secondhand professional equipment ______(136) good condition. We are also interested in telescopes, binoculars, and collectable vintage cameras. <strong>Top Prices Paid</strong> We will buy for cash directly but are also happy to sell on your behalf on a commission ______137. We can arrange to collect from you, or you can send directly to your nearest PhotoMatic outlet with shipping and handling charges covered by us. For more details, please contact us at (212) 333-4444, call your nearest PhotoMatic outlet, ______(138).</p>",
       "options": {
         "A": "on",
@@ -451,7 +537,7 @@
       }
     },
     {
-      "id": "137",
+      "id": "Part 4 - 3/4",
       "text": "<p style='border:1px solid #000; padding:10px;'><strong>PhotoMatic</strong> Specialists in professional quality pre-owned and refurbished photographic equipment. <strong>WANTED</strong> We urgently ______(135) your cameras, lenses, cases, and other accessories. We have customers all over North America, Europe, and beyond searching for secondhand professional equipment ______(136) good condition. We are also interested in telescopes, binoculars, and collectable vintage cameras. <strong>Top Prices Paid</strong> We will buy for cash directly but are also happy to sell on your behalf on a commission ______137. We can arrange to collect from you, or you can send directly to your nearest PhotoMatic outlet with shipping and handling charges covered by us. For more details, please contact us at (212) 333-4444, call your nearest PhotoMatic outlet, ______(138).</p>",
       "options": {
         "A": "way",
@@ -461,7 +547,7 @@
       }
     },
     {
-      "id": "138",
+      "id": "Part 4 - 4/4",
       "text": "<p style='border:1px solid #000; padding:10px;'><strong>PhotoMatic</strong> Specialists in professional quality pre-owned and refurbished photographic equipment. <strong>WANTED</strong> We urgently ______(135) your cameras, lenses, cases, and other accessories. We have customers all over North America, Europe, and beyond searching for secondhand professional equipment ______(136) good condition. We are also interested in telescopes, binoculars, and collectable vintage cameras. <strong>Top Prices Paid</strong> We will buy for cash directly but are also happy to sell on your behalf on a commission ______137. We can arrange to collect from you, or you can send directly to your nearest PhotoMatic outlet with shipping and handling charges covered by us. For more details, please contact us at (212) 333-4444, call your nearest PhotoMatic outlet, ______(138).</p>",
       "options": {
         "A": "thank you for responding to the survey",
@@ -471,7 +557,7 @@
       }
     },
     {
-      "id": "139",
+      "id": "Part 4 - 1/4",
       "text": "<p style='border:1px solid #000; padding:10px;'><strong>NINDO LIMITED WARRANTY</strong> THIS WARRANTY IS VALID ONLY FOR PRODUCTS PURCHASED IN EUROPE. <br>______________________________(139)<br>This product is warranted to the original ______(140) to be free from defects of quality at the time of purchase and for a period of 12 months after the date of purchase. If, during the warranty period, your product is found to be defective, the product will be repaired using NINDO replacement parts, ______(141) the product will be replaced with the same or similar model within a reasonable period of time. To obtain these warranty services, you must produce this card and proof of purchase in the form of a ______(142) sales receipt.</p>",
       "options": {
         "A": "For further warranty information, visit www.nindotech.com/fr/warranty.",
@@ -481,7 +567,7 @@
       }
     },
     {
-      "id": "140",
+      "id": "Part 4 - 2/4",
       "text": "<p style='border:1px solid #000; padding:10px;'><strong>NINDO LIMITED WARRANTY</strong> THIS WARRANTY IS VALID ONLY FOR PRODUCTS PURCHASED IN EUROPE. <br>______________________________(139)<br>This product is warranted to the original ______(140) to be free from defects of quality at the time of purchase and for a period of 12 months after the date of purchase. If, during the warranty period, your product is found to be defective, the product will be repaired using NINDO replacement parts, ______(141) the product will be replaced with the same or similar model within a reasonable period of time. To obtain these warranty services, you must produce this card and proof of purchase in the form of a ______(142) sales receipt.</p>",
       "options": {
         "A": "purchaser",
@@ -491,7 +577,7 @@
       }
     },
     {
-      "id": "141",
+      "id": "Part 4 - 3/4",
       "text": "<p style='border:1px solid #000; padding:10px;'><strong>NINDO LIMITED WARRANTY</strong> THIS WARRANTY IS VALID ONLY FOR PRODUCTS PURCHASED IN EUROPE. <br>______________________________(139)<br>This product is warranted to the original ______(140) to be free from defects of quality at the time of purchase and for a period of 12 months after the date of purchase. If, during the warranty period, your product is found to be defective, the product will be repaired using NINDO replacement parts, ______(141) the product will be replaced with the same or similar model within a reasonable period of time. To obtain these warranty services, you must produce this card and proof of purchase in the form of a ______(142) sales receipt.</p>",
       "options": {
         "A": "so",
@@ -501,7 +587,7 @@
       }
     },
     {
-      "id": "142",
+      "id": "Part 4 - 4/4",
       "text": "<p style='border:1px solid #000; padding:10px;'><strong>NINDO LIMITED WARRANTY</strong> THIS WARRANTY IS VALID ONLY FOR PRODUCTS PURCHASED IN EUROPE. <br>______________________________(139)<br>This product is warranted to the original ______(140) to be free from defects of quality at the time of purchase and for a period of 12 months after the date of purchase. If, during the warranty period, your product is found to be defective, the product will be repaired using NINDO replacement parts, ______(141) the product will be replaced with the same or similar model within a reasonable period of time. To obtain these warranty services, you must produce this card and proof of purchase in the form of a ______(142) sales receipt.</p>",
       "options": {
         "A": "buying",
@@ -511,7 +597,7 @@
       }
     },
     {
-      "id": "167",
+      "id": "Part 5 - 1/4",
       "text": "<p style='border:1px solid #000; padding:10px;'>High pressure moving across northern Mexico will funnel cooler air down the Northwest Coast. Temperatures will be at least 3 to 6 degrees lower throughout Baja, California, and Sonora. The cooler air will not reach the Southwest, where temperatures will soar past 32, some 6 degrees above normal. Because of low humidity and a stable atmosphere, afternoon thunderstorms are unlikely. Dry conditions will also persist across Durango. A low-pressure system will move slowly east through the northeastern region of Mexico today, spreading showers and heavy thunderstorms across Coahuila and Nuevo Leon. Winds from the north behind this system will dislodge a pool of cold air over Texas. The leading edge of this chilled air will reach Monterrey later today, but the core of the cold air will not arrive until midweek. A cold front trailing this low-pressure system will push showers and thunderstorms across the Chihuahua and Durango later today. Showers may form as far west as the eastern slopes of the Sierra Madre.</p><p>What conditions will northwestern Mexico experience</p>",
       "options": {
         "A": "cool air",
@@ -521,7 +607,7 @@
       }
     },
     {
-      "id": "168",
+      "id": "Part 5 - 2/4",
       "text": "<p style='border:1px solid #000; padding:10px;'>High pressure moving across northern Mexico will funnel cooler air down the Northwest Coast. Temperatures will be at least 3 to 6 degrees lower throughout Baja, California, and Sonora. The cooler air will not reach the Southwest, where temperatures will soar past 32, some 6 degrees above normal. Because of low humidity and a stable atmosphere, afternoon thunderstorms are unlikely. Dry conditions will also persist across Durango. A low-pressure system will move slowly east through the northeastern region of Mexico today, spreading showers and heavy thunderstorms across Coahuila and Nuevo Leon. Winds from the north behind this system will dislodge a pool of cold air over Texas. The leading edge of this chilled air will reach Monterrey later today, but the core of the cold air will not arrive until midweek. A cold front trailing this low-pressure system will push showers and thunderstorms across the Chihuahua and Durango later today. Showers may form as far west as the eastern slopes of the Sierra Madre.</p>Where will temperatures be higher than usual<p></p>",
       "options": {
         "A": "Baja, California",
@@ -531,7 +617,7 @@
       }
     },
     {
-      "id": "169",
+      "id": "Part 5 - 3/4",
       "text": "<p style='border:1px solid #000; padding:10px;'>High pressure moving across northern Mexico will funnel cooler air down the Northwest Coast. Temperatures will be at least 3 to 6 degrees lower throughout Baja, California, and Sonora. The cooler air will not reach the Southwest, where temperatures will soar past 32, some 6 degrees above normal. Because of low humidity and a stable atmosphere, afternoon thunderstorms are unlikely. Dry conditions will also persist across Durango. A low-pressure system will move slowly east through the northeastern region of Mexico today, spreading showers and heavy thunderstorms across Coahuila and Nuevo Leon. Winds from the north behind this system will dislodge a pool of cold air over Texas. The leading edge of this chilled air will reach Monterrey later today, but the core of the cold air will not arrive until midweek. A cold front trailing this low-pressure system will push showers and thunderstorms across the Chihuahua and Durango later today. Showers may form as far west as the eastern slopes of the Sierra Madre.</p>When will the majority of the cold air from Texas reach monterrey?<p></p>",
       "options": {
         "A": "that morning",
@@ -541,13 +627,69 @@
       }
     },
     {
-      "id": "170",
+      "id": "Part 5 - 4/4",
       "text": "<p style='border:1px solid #000; padding:10px;'>High pressure moving across northern Mexico will funnel cooler air down the Northwest Coast. Temperatures will be at least 3 to 6 degrees lower throughout Baja, California, and Sonora. The cooler air will not reach the Southwest, where temperatures will soar past 32, some 6 degrees above normal. Because of low humidity and a stable atmosphere, afternoon thunderstorms are unlikely. Dry conditions will also persist across Durango. A low-pressure system will move slowly east through the northeastern region of Mexico today, spreading showers and heavy thunderstorms across Coahuila and Nuevo Leon. Winds from the north behind this system will dislodge a pool of cold air over Texas. The leading edge of this chilled air will reach Monterrey later today, but the core of the cold air will not arrive until midweek. A cold front trailing this low-pressure system will push showers and thunderstorms across the Chihuahua and Durango later today. Showers may form as far west as the eastern slopes of the Sierra Madre.</p> <p>What will the cold front cause?</p>",
       "options": {
         "A": "dry air",
         "B": "strong winds",
         "C": "rainstorms",
         "D": "snow"
+      }
+    },
+    {
+      "id": "Part 5 - 1/3",
+      "text": "Laser Printer \n[1] - Laser printers use xerographic technology similar to that used in photocopiers. They can reproduce an almost limitless variety of type forms and sizes, as well as complex graphics - [2] - Images are electronically created on a light-sensitive drum, usually with a scanning laser. Powdered toner adheres to areas where light touches the toner to the paper permanently. [3] - A typical laser printer can print 20 color pages a minute, compared to 12 for an ink-jet printer; older dot-matrix printers can take 45 seconds to print a single page. When they were first introduced, laser printers typically cost over a thousand dollars. Now prices have dropped to only a few hundred, at most [4]-      ",
+      "media": [
+        {
+          "type": "image",
+          "src": "What is implied as an advantage of laser printers?"
+        }
+      ],
+      "options": {
+        "A": " speed ",
+        "B": "easy of use ",
+        "C": "low ink cost ",
+        "D": "superior printing quality "
+      }
+    },
+    {
+      "id": "Part 5 - 2/3",
+      "text": "Laser Printer \n[1] - Laser printers use xerographic technology similar to that used in photocopiers. They can reproduce an almost limitless variety of type forms and sizes, as well as complex graphics - [2] - Images are electronically created on a light-sensitive drum, usually with a scanning laser. Powdered toner adheres to areas where light touches the toner to the paper permanently. [3] - A typical laser printer can print 20 color pages a minute, compared to 12 for an ink-jet printer; older dot-matrix printers can take 45 seconds to print a single page. When they were first introduced, laser printers typically cost over a thousand dollars. Now prices have dropped to only a few hundred, at most [4]-      ",
+      "media": [
+        {
+          "type": "image",
+          "src": "According to the passage how much did early laser printer cost?"
+        }
+      ],
+      "options": {
+        "A": "a few hundred dollars",
+        "B": "approximately $500",
+        "C": "$500 - $700",
+        "D": "over $1,000"
+      }
+    },
+    {
+      "id": "Par 5 - 3/3",
+      "text": "Laser Printer \n[1] - Laser printers use xerographic technology similar to that used in photocopiers. They can reproduce an almost limitless variety of type forms and sizes, as well as complex graphics - [2] - Images are electronically created on a light-sensitive drum, usually with a scanning laser. Powdered toner adheres to areas where light touches the toner to the paper permanently. [3] - A typical laser printer can print 20 color pages a minute, compared to 12 for an ink-jet printer; older dot-matrix printers can take 45 seconds to print a single page. When they were first introduced, laser printers typically cost over a thousand dollars. Now prices have dropped to only a few hundred, at most [4]-      ",
+      "media": [
+        {
+          "type": "image",
+          "src": "In which of the positions marked [1]"
+        },
+        {
+          "type": "image",
+          "src": "[2]"
+        },
+        {
+          "type": "image",
+          "src": "[3] or [4] does the following sentences belong? \"They operate very quickly\""
+        }
+      ],
+      "options": {
+        "A": "[1]",
+        "B": "[2]",
+        "C": "[3]",
+        "D": "[4]"
       }
     }
   ]
