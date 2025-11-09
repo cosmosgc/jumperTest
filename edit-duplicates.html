@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Question ID Editor</title>
+<style>
+  body {
+    font-family: sans-serif;
+    background: #f8fafc;
+    padding: 20px;
+  }
+  h1 {
+    color: #1e293b;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
+  th, td {
+    border-bottom: 1px solid #e2e8f0;
+    padding: 8px 10px;
+    text-align: left;
+  }
+  th {
+    background: #e2e8f0;
+  }
+  input[type="text"] {
+    /* width: 100%; */
+    padding: 5px;
+  }
+  .duplicate {
+    background-color: #fee2e2;
+  }
+  button {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  button:hover {
+    background-color: #1d4ed8;
+  }
+  pre {
+    background: #f1f5f9;
+    padding: 10px;
+    border-radius: 6px;
+    overflow-x: auto;
+  }
+</style>
+</head>
+<body>
+<h1>Duplicate ID Fixer</h1>
+<p>This tool loads <b>questions.json</b>, finds repeated IDs, and lets you edit them.</p>
+
+<table id="questionTable">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>ID</th>
+      <th>Text</th>
+    </tr>
+  </thead>
+  <tbody></tbody>
+</table>
+
+<button id="downloadBtn">Download Fixed JSON</button>
+
+<h2>Preview</h2>
+<pre id="preview"></pre>
+
+<script>
+async function loadData() {
+  const response = await fetch("questions.json");
+  const data = await response.json();
+  renderTable(data);
+}
+
+function renderTable(data) {
+  const tbody = document.querySelector("#questionTable tbody");
+  tbody.innerHTML = "";
+
+  // Count IDs
+  const counts = {};
+  data.questions.forEach(q => counts[q.id] = (counts[q.id] || 0) + 1);
+
+  data.questions.forEach((q, i) => {
+    const tr = document.createElement("tr");
+    if (counts[q.id] > 1) tr.classList.add("duplicate");
+
+    tr.innerHTML = `
+      <td>${i + 1}</td>
+      <td><input type="text" value="${q.id}" data-index="${i}"></td>
+      <td>${q.text}</td>
+    `;
+    tbody.appendChild(tr);
+  });
+
+  // Update preview when edited
+  tbody.querySelectorAll("input").forEach(input => {
+    input.addEventListener("input", e => {
+      const index = e.target.dataset.index;
+      data.questions[index].id = e.target.value;
+      updatePreview(data);
+      highlightDuplicates(data);
+    });
+  });
+
+  updatePreview(data);
+  highlightDuplicates(data);
+
+  document.getElementById("downloadBtn").onclick = () => {
+    downloadJSON(data);
+  };
+}
+
+function highlightDuplicates(data) {
+  const counts = {};
+  data.questions.forEach(q => counts[q.id] = (counts[q.id] || 0) + 1);
+
+  document.querySelectorAll("#questionTable tbody tr").forEach((tr, i) => {
+    const id = data.questions[i].id;
+    if (counts[id] > 1) tr.classList.add("duplicate");
+    else tr.classList.remove("duplicate");
+  });
+}
+
+function updatePreview(data) {
+  document.getElementById("preview").textContent = JSON.stringify(data, null, 2);
+}
+
+function downloadJSON(data) {
+  const blob = new Blob([JSON.stringify(data, null, 2)], {type: "application/json"});
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement("a");
+  a.href = url;
+  a.download = "questions_fixed.json";
+  document.body.appendChild(a);
+  a.click();
+  a.remove();
+}
+
+loadData();
+</script>
+</body>
+</html>
