@@ -241,7 +241,7 @@ fetch('questions.json')
         return; // stop the function
     }
     try {
-        const expirationTime = Date.now() + 60 * 60 * 1000; // 1 hour in milliseconds
+        const expirationTime = Date.now() +90 * 60 * 1000;
         const stateWithExpiration = {
             answers: state.answers,
             expiration: expirationTime
