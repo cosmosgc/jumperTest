@@ -237,18 +237,22 @@ fetch('questions.json')
   // 🔸 Save state to sessionStorage
   function saveState() {
     if (!studentName) {
-      console.warn('No student name — state not saved');
-      return; // stop the function
+        console.warn('No student name — state not saved');
+        return; // stop the function
     }
     try {
-      sessionStorage.setItem(
-        storageKey,
-        JSON.stringify({ answers: state.answers })
-      );
+        const expirationTime = Date.now() + 60 * 60 * 1000; // 1 hour in milliseconds
+        const stateWithExpiration = {
+            answers: state.answers,
+            expiration: expirationTime
+        };
+        
+        sessionStorage.setItem(storageKey, JSON.stringify(stateWithExpiration));
     } catch (e) {
-      console.warn('Error saving state:', e);
+        console.warn('Error saving state:', e);
     }
-  }
+}
+
 
 
   function $(sel, ctx=document) { return ctx.querySelector(sel); }
