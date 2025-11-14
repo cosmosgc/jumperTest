@@ -469,6 +469,16 @@
     {
       "id": "Part 3 - audio 10",
       "text": "The listening Comprehension Section, from which you will need to listen to the audio and choose the best answer from the choices listed. Play the track to hear the short talk.\n\nWhat kind of artwork is being discussed?",
+      "media": [
+        {
+          "type": "audio",
+          "src": "tracks/4/main 4.mp3"
+        },
+        {
+          "type": "audio",
+          "src": "tracks/4/11.mp3"
+        }
+      ],
       "options": {
         "A": "Sculpture",
         "B": "Pencil drawing ",
@@ -479,6 +489,16 @@
     {
       "id": "Part 3 - audio 11",
       "text": "The listening Comprehension Section, from which you will need to listen to the audio and choose the best answer from the choices listed. Play the track to hear the short talk.\n\nWho is the speaker addressing?",
+      "media": [
+        {
+          "type": "audio",
+          "src": "tracks/4/main 4.mp3"
+        },
+        {
+          "type": "audio",
+          "src": "tracks/4/12.mp3"
+        }
+      ],
       "options": {
         "A": "Buyers at an art sale",
         "B": "An audience at a lecture",
@@ -489,6 +509,16 @@
     {
       "id": "Part 3 - audio 12",
       "text": "The listening Comprehension Section, from which you will need to listen to the audio and choose the best answer from the choices listed. Play the track to hear the short talk.\n\nWho is Yara Levinsons?",
+      "media": [
+        {
+          "type": "audio",
+          "src": "tracks/4/main 4.mp3"
+        },
+        {
+          "type": "audio",
+          "src": "tracks/4/13.mp3"
+        }
+      ],
       "options": {
         "A": "The speaker",
         "B": "The building's architect",
@@ -499,6 +529,16 @@
     {
       "id": "Part 3 - audio 13",
       "text": "The listening Comprehension Section, from which you will need to listen to the audio and choose the best answer from the choices listed. Play the track to hear the short talk.\n\nHow many people will work in the building?",
+      "media": [
+        {
+          "type": "audio",
+          "src": "tracks/4/main 4.mp3"
+        },
+        {
+          "type": "audio",
+          "src": "tracks/4/14.mp3"
+        }
+      ],
       "options": {
         "A": "250",
         "B": "500",
@@ -509,6 +549,16 @@
     {
       "id": "Part 3 - audio 14",
       "text": "The listening Comprehension Section, from which you will need to listen to the audio and choose the best answer from the choices listed. Play the track to hear the short talk.\n\nWhat is the purpose of the talk? ",
+      "media": [
+        {
+          "type": "audio",
+          "src": "tracks/4/main 4.mp3"
+        },
+        {
+          "type": "audio",
+          "src": "tracks/4/15.mp3"
+        }
+      ],
       "options": {
         "A": "To decide a building ",
         "B": "To introduce a new employee",
