@@ -299,7 +299,10 @@ function closeModal(el){
 }
 
 // ---- FETCH JSON FILE ----
-fetch('questions.json')
+// examUrl = 'http://localhost:3000/exam-engine/public/api/exams/1';
+examUrl = 'questions.json'; // For local testing
+
+fetch(examUrl)
   .then(response => {
     if (!response.ok) throw new Error('Failed to load quiz file');
     return response.json();
